@@ -1,0 +1,430 @@
+/* General styling */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #2d3748;
+}
+
+/* Container styles */
+.container {
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    max-width: 800px;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styling */
+.title {
+    font-size: 24px;
+    font-weight: 600;
+    color: blue;
+    text-align: center;
+    margin-bottom: 24px;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+/* Link styles */
+.navigationLinks a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    margin-right: 16px;
+    transition: color 0.3s ease;
+}
+
+.priorityInfo {
+    margin-bottom: 20px;
+    border: 1px solid #eee;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+.priorityInfoTitle {
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center; /* Changed to center */
+    align-items: center;
+    flex-direction: column; /* Optional: If you want the button below the text */
+}
+
+.priorityInfoTitle p {
+    margin-top: 10px;
+}
+
+.priorityInfo button.editButton {
+    height: 36px;
+    width: 150px;
+    padding: 6px 10px;
+    position: absolute;
+    right: 30%;
+    top: 53%;
+    transform: translateX(50%); 
+}
+
+.priorityItem {
+    margin-bottom: 8px;
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+}
+
+.priorityItem:last-child {
+    border-bottom: none;
+}
+
+/* Styles for Edit Priority Modal (optional, if you want specific styling) */
+.editPriorityModalContent {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 500px;
+    position: relative;
+}
+
+.editPriorityModalContent .close {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.editPriorityModalContent h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.editPriorityModalContent .modal-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.editPriorityModalContent .modal-list-item label {
+    margin-right: 10px;
+}
+
+.editPriorityModalContent .modal-list-item input[type="number"] {
+    width: 60px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+}
+/* List styling */
+.list {
+    list-style: none;
+    padding: 0;
+}
+
+.list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f7fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+.add-team-button {
+    background-color: #4CAF50; 
+    color: white; 
+    border: none; 
+    border-radius: 5px;
+    padding: 10px 15px; 
+    cursor: pointer; 
+    font-size: 14px;
+    max-width: 150px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-team-button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+.add-team-button:active {
+    background-color: #3e8e41;
+    transform: scale(1); 
+}
+
+.add-team-button:focus {
+    outline: none;
+    box-shadow: 0 0 5px #4CAF50; 
+}
+
+.modal-list-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+    cursor: pointer;
+    animation: fadeIn 0.4s ease-out;
+}
+
+.modal-list-item label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.modal-list-item:hover {
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-color: #bbb;
+    transform: scale(1.03); /* Phóng to nhẹ khi hover */
+}
+
+.modal-list-item input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.modal-list-item input[type="checkbox"]:hover {
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    transform: scale(1.1); /* Phóng to checkbox nhẹ khi hover */
+}
+
+.modal-list-item input[type="checkbox"]:checked {
+    border-color: #007bff;
+    background-color: #007bff;
+}
+
+/* Hiệu ứng xuất hiện mờ dần */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.list-item:hover {
+    background: #edf2f7;
+    transform: scale(1.02);
+}
+
+/* Button styling */
+.button {
+    display: inline-block;
+    padding: 14px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    background: linear-gradient(90deg, #3182ce, #2b6cb0);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(90deg, #2b6cb0, #2a4365);
+}
+
+/* Edit button styling */
+.editButton {
+    padding: 8px 12px;
+    font-size: 14px;
+    background: #68d391;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    max-width: 200px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.editButton:hover {
+    background: #48bb78;
+    transform: scale(1.05);
+}
+
+/* Modal overlay */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease;
+}
+.missing {
+    color: #e53e3e;
+    font-weight: 500;
+    margin-bottom: 14px;
+    padding: 10px 14px;
+    border-radius: 8px;
+    background: #fff5f5;
+    border: 1px solid #fc8181;
+}
+.addbutton {
+    display: inline-block;
+    max-width: 200px;
+    margin-left: 269px;
+    padding: 14px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    background: linear-gradient(90deg, #3182ce, #2b6cb0);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+.sufficient {
+    color: #38a169;
+    font-weight: 500;
+    margin-bottom: 14px;
+    padding: 10px 14px;
+    border-radius: 8px;
+    background: #f0fff4;
+    border: 1px solid #9ae6b4;
+}
+/* Modal content */
+.modal-content {
+    background: #ffffff;
+    padding: 24px;
+    border-radius: 12px;
+    width: 500px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    position: relative;
+    animation: slideDown 0.4s ease;
+}
+
+/* Input fields in modal */
+.modal-input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #cbd5e0;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+/* Close button */
+.close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    font-size: 20px;
+    color: #a0aec0;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close:hover {
+    color: #718096;
+}
+.navigationLinks {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 24px;
+    color:white;
+}
+
+.link {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    color: #ffffff;
+    background-color: #4caf50; /* Green color */
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.link:hover {
+    background-color: #45a049; /* Darker green */
+    transform: translateY(-2px);
+}
+
+.link:active {
+    background-color: #357a38;
+    transform: translateY(0);
+}
+
+/* ... other styles ... */
+
+.pagination-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.pagination-controls button {
+    background-color: #81beff;
+    padding: 8px 12px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.pagination-controls button:hover {
+    background-color: #81beff;
+}
+
+.pagination-controls .active-page {
+    background-color: #007bff; /* Example active color */
+    color: white;
+    border-color: #007bff;
+}
+
+/* Keyframes for animations */  
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

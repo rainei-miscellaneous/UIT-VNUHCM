@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12">
+        <h1 class="text-center mb-4 text-primary"><i class="fas fa-sitemap me-2"></i>Clustering Results</h1>
+
+        <!-- Display Clusters -->
+        <div class="row">
+            {% for cluster_id, headers in clusters.items %}
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-header bg-success text-white">
+                            <h2 class="h5 mb-0">Cluster {{ cluster_id }} ({{ headers|length }} proteins)</h2>
+                        </div>
+                        <div class="card-body cluster-scroll" id="cluster-{{ cluster_id }}">
+                            <!-- Danh sách protein ban đầu (20 protein đầu tiên) -->
+                            <ul class="list-group list-group-flush cluster-initial" data-cluster-id="{{ cluster_id }}">
+                                {% for header in headers|slice:":20" %}
+                                    <li class="list-group-item d-flex align-items-center">
+                                        <span class="badge bg-primary me-2">{{ forloop.counter }}</span>
+                                        {{ header }}
+                                    </li>
+                                {% empty %}
+                                    <li class="list-group-item text-muted">No proteins in this cluster.</li>
+                                {% endfor %}
+                            </ul>
+                            <!-- Danh sách đầy đủ protein (ẩn ban đầu) -->
+                            <ul class="list-group list-group-flush cluster-full d-none" data-cluster-id="{{ cluster_id }}">
+                                {% for header in headers %}
+                                    <li class="list-group-item d-flex align-items-center">
+                                        <span class="badge bg-primary me-2">{{ forloop.counter }}</span>
+                                        {{ header }}
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                            <!-- Nút Show More (hiển thị nếu cluster có nhiều hơn 20 protein) -->
+                            {% if headers|length > 20 %}
+                                <div class="text-center mt-2">
+                                    <button class="btn btn-outline-primary btn-sm show-more-btn" data-cluster-id="{{ cluster_id }}">Show More</button>
+                                </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            {% empty %}
+                <div class="col-12">
+                    <div class="alert alert-warning text-center" role="alert">
+                        No clusters found.
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+
+       <!-- Cluster Visualization -->
+<div class="card shadow-sm mt-4">
+    <div class="card-header bg-primary text-white">
+        <h2 class="h5 mb-0"><i class="fas fa-chart-scatter me-2"></i> Cluster Visualization</h2>
+    </div>
+    <div class="card-body text-center">
+        <img src="data:image/png;base64,{{ cluster_plot }}" alt="Cluster Visualization" class="img-fluid rounded" style="max-width: 100%; height: auto;">
+        <!-- Hiển thị Silhouette Score -->
+        {% if silhouette_score is not None %}
+            <p class="mt-3"><strong>Silhouette Score:</strong> {{ silhouette_score|floatformat:3 }}</p>
+        {% else %}
+            <p class="mt-3 text-muted"><strong>Silhouette Score:</strong> Không thể tính toán (chỉ có 1 cụm).</p>
+        {% endif %}
+    </div>
+</div>
+
+<!-- Dendrogram Visualization (only for Hierarchical Clustering) -->
+{% if dendrogram_plot %}
+<div class="card shadow-sm mt-4">
+    <div class="card-header bg-success text-white">
+        <h2 class="h5 mb-0"><i class="fas fa-project-diagram me-2"></i> Dendrogram</h2>
+    </div>
+    <div class="card-body text-center">
+        <img src="data:image/png;base64,{{ dendrogram_plot }}" alt="Dendrogram" class="img-fluid rounded" style="max-width: 100%; height: auto;">
+    </div>
+</div>
+{% endif %}
+
+
+<!-- JavaScript để xử lý nút Show More -->
+<script>
+    document.querySelectorAll('.show-more-btn').forEach(button => {
+        button.addEventListener('click', function() {
+            const clusterId = this.getAttribute('data-cluster-id');
+            const initialList = document.querySelector(`.cluster-initial[data-cluster-id="${clusterId}"]`);
+            const fullList = document.querySelector(`.cluster-full[data-cluster-id="${clusterId}"]`);
+            
+            // Ẩn danh sách ban đầu và hiển thị danh sách đầy đủ
+            initialList.classList.add('d-none');
+            fullList.classList.remove('d-none');
+            
+            // Ẩn nút Show More
+            this.style.display = 'none';
+        });
+    });
+</script>
+{% endblock %}

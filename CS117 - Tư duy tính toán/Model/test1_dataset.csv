@@ -1,0 +1,687 @@
+Gender,Age,BMI,BP,HR,WorkTime,Activity,Stress,FoodHabit,ElectronicHabit,Temp,Noise,SleepDuration,SleepStart,SleepQuality,Label
+Female,30,18.6,111,84,Day,4,4,Yes,No,16,,6,6,2,Narcolepsy
+Male,18,24.0,128,71,Day,7,7,No,Yes,25,,8,10,1,Sleep Disorder
+Male,33,25.2,93,67,Day,9,8,Yes,Yes,18,,5,2,3,Narcolepsy
+Male,18,25.6,124,78,Day,9,5,No,Yes,18,,2,5,10,Normal
+Male,23,24.2,121,67,Day,7,9,No,Yes,27,Low,5,2,9,Normal
+Male,18,20.8,111,96,Day,8,6,No,Yes,30,,6,5,1,Narcolepsy
+Female,50,23.1,98,66,Day,1,9,Yes,Yes,27,Low,8,5,3,Sleep Disorder
+Female,8,18.4,110,93,Day,5,4,No,No,24,Low,10,4,5,Mild Insomnia
+Female,19,23.9,116,76,Night,1,5,No,No,22,,7,6,2,Sleep Apnea
+Female,20,20.7,127,61,Day,9,5,No,No,29,Low,12,3,2,Narcolepsy
+Male,86,24.4,130,71,Day,6,6,Yes,Yes,22,,12,1,1,Sleep Disorder
+Male,19,20.9,108,85,Day,4,5,No,No,15,,3,4,4,Mild Insomnia
+Male,38,20.9,103,62,Day,7,7,No,Yes,20,,7,11,1,Sleep Disorder
+Male,63,29.8,157,62,Day,2,4,No,No,27,High,5,4,7,Good Sleep
+Male,30,19.9,116,82,Night,10,9,Yes,No,16,,6,3,2,Sleep Disorder
+Male,45,29.3,105,63,Day,9,6,Yes,Yes,29,,4,1,2,Sleep Apnea
+Female,57,22.4,90,67,Day,2,5,No,Yes,18,Low,12,7,2,Risk of Disorder
+Female,28,24.5,124,85,Day,8,7,No,Yes,30,High,12,8,9,Normal
+Female,28,20.2,122,65,Night,9,7,No,No,27,,2,6,1,Sleep Disorder
+Female,18,20.9,119,84,,2,4,Yes,Yes,17,High,4,5,1,Risk of Disorder
+Male,3,18.6,123,125,,4,6,Yes,No,27,,12,9,9,Normal
+Male,26,29.0,114,55,Both,8,9,Yes,Yes,21,,2,8,10,Normal
+Male,27,19.7,100,80,Both,5,3,No,No,27,High,4,11,3,Narcolepsy
+Male,35,21.2,92,61,Day,7,6,No,Yes,26,Low,2,7,2,Sleep Apnea
+Female,31,27.3,107,74,Day,3,8,Yes,No,20,High,5,9,1,Narcolepsy
+Female,44,25.7,111,86,Both,8,4,Yes,No,21,,2,10,10,Normal
+Male,27,23.4,123,56,Both,4,9,No,Yes,20,,9,12,1,Narcolepsy
+Female,47,22.0,112,81,Both,10,8,Yes,Yes,28,,7,6,9,Good Sleep
+Male,68,23.5,145,60,,3,8,Yes,No,30,High,10,11,2,Sleep Disorder
+Female,47,27.8,125,89,Day,3,10,Yes,Yes,18,,8,11,9,Normal
+Female,40,27.8,127,76,Day,10,8,Yes,No,26,Low,6,4,4,Mild Insomnia
+Female,38,18.5,101,74,Both,9,5,No,No,26,Low,6,7,3,Sleep Apnea
+Female,17,26.2,118,95,,6,9,Yes,Yes,25,Low,5,6,4,Mild Insomnia
+Male,30,27.3,122,55,Day,6,9,Yes,No,22,High,11,2,6,Mild Insomnia
+Male,44,20.6,118,82,Night,7,4,Yes,Yes,16,High,3,7,3,Risk of Disorder
+Male,42,24.1,95,81,Both,1,3,No,No,16,,12,3,2,Narcolepsy
+Female,30,19.4,100,77,Night,6,7,No,No,22,High,12,6,3,Narcolepsy
+Female,29,21.7,120,89,Day,2,7,Yes,No,28,High,8,5,1,Risk of Disorder
+Female,21,29.4,93,70,Day,3,1,No,No,30,Low,3,3,1,Narcolepsy
+Female,29,29.4,109,76,Both,2,6,Yes,Yes,15,,10,2,4,Mild Insomnia
+Female,36,22.6,90,75,Night,5,8,No,Yes,16,High,11,10,3,Narcolepsy
+Male,31,28.9,118,79,Day,4,4,Yes,No,27,High,10,5,8,Good Sleep
+Male,24,28.5,91,55,Day,10,5,Yes,No,28,High,3,9,10,Normal
+Female,16,26.5,108,85,,3,9,No,Yes,17,,12,6,3,Sleep Disorder
+Male,2,14.0,112,109,Day,1,9,No,Yes,15,,11,4,1,Sleep Disorder
+Female,90,23.9,115,69,Day,6,2,No,No,26,,6,3,3,Sleep Apnea
+Female,38,25.9,127,78,Night,3,10,No,Yes,23,Low,11,8,2,Sleep Disorder
+Female,47,23.9,126,77,Day,3,8,No,Yes,26,Low,8,3,3,Risk of Disorder
+Male,50,24.5,127,61,Night,7,6,Yes,No,28,High,2,8,7,Good Sleep
+Male,32,18.9,111,67,Day,3,9,Yes,Yes,20,High,3,6,1,Risk of Disorder
+Male,31,20.9,114,64,Night,8,6,Yes,Yes,18,Low,5,3,2,Narcolepsy
+Male,20,24.9,128,84,Day,3,7,No,Yes,16,High,4,4,10,Good Sleep
+Female,29,28.9,128,70,Both,1,9,No,Yes,22,,12,10,3,Risk of Disorder
+Male,42,29.9,96,78,,5,9,Yes,Yes,17,High,4,2,8,Good Sleep
+Female,17,23.6,103,76,Day,6,4,Yes,No,27,High,2,10,10,Good Sleep
+Female,51,25.0,90,77,Night,7,5,Yes,No,23,High,5,6,8,Normal
+Female,25,21.8,124,89,Day,9,7,No,Yes,26,High,12,10,2,Sleep Apnea
+Female,24,28.4,105,72,Day,10,4,No,No,28,Low,12,8,10,Normal
+Female,20,20.5,126,73,Night,5,7,Yes,No,18,Low,6,4,1,Sleep Disorder
+Female,18,29.5,94,71,,2,6,No,Yes,18,,10,1,1,Sleep Apnea
+Female,46,22.6,93,63,Day,5,8,No,Yes,15,Low,2,1,10,Good Sleep
+Female,29,29.8,120,70,Night,7,4,No,Yes,19,High,11,3,2,Narcolepsy
+Female,19,29.3,94,68,Day,3,4,No,No,21,,10,9,3,Sleep Disorder
+Male,33,21.2,102,77,Day,7,10,No,Yes,19,Low,10,1,8,Good Sleep
+Female,21,23.5,125,76,Day,4,9,Yes,No,16,,6,3,3,Sleep Disorder
+Female,24,22.7,102,62,Night,5,4,Yes,No,24,,7,1,3,Sleep Apnea
+Male,56,28.1,122,61,Day,8,9,Yes,No,26,High,12,6,1,Narcolepsy
+Male,37,21.4,106,83,Both,7,5,Yes,No,24,High,11,6,9,Good Sleep
+Male,30,21.4,124,56,,8,6,Yes,Yes,25,,8,6,4,Mild Insomnia
+Female,13,19.9,110,94,,6,9,No,Yes,17,Low,10,2,7,Normal
+Male,41,20.6,94,78,Both,5,4,Yes,Yes,29,Low,7,5,2,Narcolepsy
+Female,39,20.0,111,67,Night,1,5,Yes,No,17,Low,11,11,9,Good Sleep
+Male,41,22.8,127,80,Day,4,4,No,No,30,,6,3,3,Risk of Disorder
+Female,19,24.0,128,90,Night,7,4,Yes,Yes,28,Low,11,9,7,Good Sleep
+Female,23,21.9,90,71,Day,3,4,No,No,17,High,7,1,7,Normal
+Male,18,25.9,123,99,Day,10,3,No,No,30,High,2,12,3,Sleep Disorder
+Male,48,20.8,122,61,Both,7,6,Yes,Yes,21,Low,6,2,9,Normal
+Female,34,30.0,94,78,Day,2,5,No,No,17,High,3,2,3,Sleep Disorder
+Female,69,27.6,102,71,Day,8,5,Yes,No,24,High,8,9,5,Mild Insomnia
+Male,54,19.0,90,64,Day,6,1,No,No,26,High,7,11,2,Sleep Disorder
+Male,9,19.1,90,70,Day,1,10,Yes,No,18,Low,9,12,2,Narcolepsy
+Male,27,22.7,97,68,Both,6,8,Yes,No,28,High,5,7,3,Sleep Disorder
+Male,25,28.0,104,60,Day,7,10,No,Yes,27,High,10,9,1,Sleep Disorder
+Male,67,26.9,143,76,Day,4,8,No,Yes,17,Low,11,2,2,Sleep Disorder
+Female,34,27.4,121,81,Day,5,9,No,Yes,28,,12,7,4,Mild Insomnia
+Male,38,24.5,109,55,Day,8,4,No,No,29,Low,10,5,8,Normal
+Male,42,27.2,115,66,,5,7,Yes,Yes,23,,5,5,10,Good Sleep
+Female,42,22.5,114,66,Day,10,6,Yes,No,28,,6,9,4,Mild Insomnia
+Male,44,22.8,123,71,Day,8,9,No,Yes,16,Low,2,11,7,Good Sleep
+Male,26,25.6,95,66,Night,4,8,Yes,No,17,,7,3,10,Good Sleep
+Male,1,16.3,94,125,Day,10,7,No,Yes,24,High,10,2,3,Sleep Disorder
+Female,35,21.3,119,61,Day,8,4,Yes,No,24,,8,4,1,Narcolepsy
+Male,9,19.4,124,100,,7,10,Yes,No,25,Low,8,5,8,Good Sleep
+Male,45,21.6,128,59,Day,1,6,Yes,Yes,20,Low,9,7,1,Sleep Apnea
+Male,32,25.2,99,69,Day,6,7,Yes,Yes,21,,10,3,7,Good Sleep
+Female,80,18.6,142,71,,6,1,No,No,19,Low,5,10,6,Mild Insomnia
+Female,30,27.4,125,61,Night,6,10,No,Yes,18,High,11,4,4,Mild Insomnia
+Male,17,19.5,123,88,Day,9,7,No,Yes,16,Low,12,6,1,Sleep Disorder
+Male,44,23.5,120,56,Day,8,5,Yes,Yes,24,,5,7,9,Normal
+Male,41,27.5,126,82,Day,4,7,Yes,Yes,27,Low,4,7,1,Sleep Disorder
+Male,24,20.1,96,56,Day,4,9,Yes,Yes,26,Low,12,10,2,Risk of Disorder
+Male,51,25.3,142,67,,9,3,No,No,28,High,7,1,7,Normal
+Female,24,22.8,127,63,Night,5,4,Yes,Yes,18,,7,8,3,Narcolepsy
+Female,21,19.7,129,76,Day,2,2,No,No,24,Low,8,11,2,Sleep Apnea
+Female,45,27.3,103,66,Day,10,10,No,Yes,15,Low,9,3,10,Good Sleep
+Male,9,15.0,114,85,Day,7,7,Yes,Yes,30,High,6,7,1,Sleep Disorder
+Male,11,14.5,101,84,,6,9,Yes,Yes,21,,9,9,7,Good Sleep
+Female,60,22.2,113,67,,3,2,No,No,25,,12,3,5,Mild Insomnia
+Male,81,21.0,96,76,Day,9,4,Yes,Yes,25,,6,12,2,Narcolepsy
+Male,39,21.2,122,73,Day,3,10,Yes,Yes,26,High,9,1,8,Good Sleep
+Male,63,20.8,142,77,,8,2,No,No,16,High,5,1,2,Sleep Disorder
+Male,38,28.6,95,80,Day,3,5,Yes,No,30,,5,11,4,Mild Insomnia
+Male,32,25.6,90,65,Day,7,5,No,No,23,High,8,4,10,Good Sleep
+Female,42,21.9,90,88,Day,10,10,Yes,Yes,15,High,4,12,5,Mild Insomnia
+Female,22,29.0,122,71,Day,9,6,No,No,27,High,9,8,6,Mild Insomnia
+Male,32,22.2,128,70,Both,9,9,No,Yes,29,High,3,4,10,Normal
+Male,87,19.6,93,75,Day,10,7,No,Yes,20,Low,8,7,3,Narcolepsy
+Male,43,21.6,100,56,Day,3,7,Yes,Yes,20,High,12,12,2,Narcolepsy
+Male,58,25.1,131,57,Day,8,10,No,Yes,16,,7,9,2,Narcolepsy
+Male,29,21.5,120,68,Both,9,7,Yes,No,19,High,8,5,5,Mild Insomnia
+Male,86,23.4,131,82,Day,4,10,No,Yes,26,High,8,9,10,Normal
+Female,82,21.5,129,71,Day,4,4,Yes,No,25,Low,11,9,10,Normal
+Male,49,27.7,112,75,Night,4,6,No,No,18,,7,9,1,Narcolepsy
+Male,42,23.0,90,59,Day,7,7,No,Yes,24,,8,8,2,Sleep Disorder
+Female,27,25.3,104,63,Night,6,9,Yes,No,17,Low,7,12,3,Sleep Apnea
+Male,25,19.8,113,67,Day,2,2,No,No,27,,7,12,8,Good Sleep
+Female,18,22.0,113,94,,2,5,No,Yes,27,Low,7,8,9,Normal
+Male,41,21.0,107,71,Day,1,10,No,Yes,18,High,6,4,1,Sleep Disorder
+Male,87,19.4,159,65,,10,3,No,No,27,Low,6,4,2,Sleep Apnea
+Female,21,21.5,124,84,Day,4,7,No,Yes,26,High,5,10,7,Good Sleep
+Female,39,20.6,94,70,Both,8,7,Yes,No,29,Low,7,12,6,Mild Insomnia
+Female,52,23.0,142,67,Both,7,9,No,Yes,30,Low,12,8,2,Sleep Disorder
+Female,30,19.4,93,62,,9,1,No,No,26,,7,3,10,Good Sleep
+Female,29,28.8,125,84,Both,3,6,Yes,No,30,,8,8,9,Normal
+Female,20,24.4,91,88,Day,3,7,Yes,Yes,29,,3,3,1,Sleep Apnea
+Male,27,26.7,121,84,Day,1,4,No,No,27,,6,6,10,Good Sleep
+Male,34,19.4,114,79,Day,1,10,Yes,No,19,Low,4,6,5,Mild Insomnia
+Male,33,28.6,100,63,Night,5,7,No,Yes,22,Low,3,9,1,Sleep Apnea
+Male,40,18.8,122,82,Day,6,5,No,Yes,23,High,7,6,3,Narcolepsy
+Female,33,25.0,126,86,Both,10,7,Yes,Yes,26,Low,7,2,5,Mild Insomnia
+Female,48,23.3,127,80,Day,7,5,No,No,25,High,9,3,9,Good Sleep
+Male,30,25.7,126,83,Day,2,5,Yes,No,22,High,4,11,10,Good Sleep
+Male,36,21.8,121,71,Day,9,5,Yes,No,19,Low,6,3,2,Narcolepsy
+Female,22,23.1,94,65,Night,1,7,No,Yes,22,,4,9,2,Sleep Apnea
+Female,18,26.1,115,63,,7,6,No,Yes,29,,2,5,1,Risk of Disorder
+Male,55,19.7,121,77,Both,9,7,Yes,No,15,High,11,5,1,Narcolepsy
+Female,42,20.5,109,65,,6,4,Yes,Yes,25,High,11,12,8,Normal
+Male,21,29.9,128,68,Night,9,7,Yes,Yes,16,High,4,12,2,Sleep Apnea
+Female,24,26.0,125,85,Day,3,9,No,Yes,20,High,7,1,10,Good Sleep
+Female,48,28.4,117,89,Day,6,4,Yes,Yes,18,Low,6,10,3,Sleep Apnea
+Male,39,28.8,98,78,Night,7,6,No,No,25,Low,3,8,1,Risk of Disorder
+Female,27,27.4,129,67,Night,3,5,Yes,Yes,20,,2,3,3,Sleep Apnea
+Male,29,24.0,129,74,Day,10,7,No,Yes,30,High,5,9,3,Sleep Disorder
+Female,15,19.4,98,67,,2,6,Yes,Yes,22,,3,1,8,Good Sleep
+Male,20,25.2,114,70,Day,8,6,No,Yes,17,Low,3,4,3,Sleep Apnea
+Female,10,18.8,102,60,Day,5,4,No,Yes,18,Low,6,9,3,Sleep Apnea
+Male,94,24.4,112,76,Day,9,6,Yes,Yes,28,,8,2,9,Good Sleep
+Female,26,26.7,105,71,Both,4,9,No,Yes,19,High,6,8,6,Mild Insomnia
+Male,36,23.5,106,78,Both,5,8,Yes,No,23,High,10,8,2,Risk of Disorder
+Female,26,19.5,123,68,,1,4,Yes,No,24,High,6,6,1,Sleep Disorder
+Male,80,20.5,96,65,,5,9,Yes,No,30,,11,5,2,Sleep Apnea
+Female,21,23.0,117,66,Day,7,1,No,No,18,,6,10,3,Risk of Disorder
+Female,18,20.6,104,87,,3,7,No,Yes,29,High,12,11,2,Sleep Apnea
+Female,30,20.2,96,86,,10,2,No,No,26,,8,3,7,Normal
+Male,50,27.3,94,55,Night,4,4,Yes,Yes,20,High,8,5,9,Normal
+Female,5,17.9,109,81,,10,9,No,Yes,20,,12,12,10,Normal
+Male,30,19.1,112,74,Day,7,9,No,Yes,21,,8,8,1,Risk of Disorder
+Female,33,23.4,96,74,Day,7,4,Yes,No,19,High,8,11,2,Sleep Disorder
+Female,21,24.9,117,86,Day,7,3,No,No,17,Low,2,4,8,Normal
+Female,48,27.3,117,72,Night,6,8,No,No,30,High,8,1,1,Narcolepsy
+Female,33,21.3,121,80,Day,6,7,No,Yes,16,High,10,2,1,Sleep Disorder
+Female,48,19.4,98,80,Day,5,8,Yes,Yes,19,Low,8,8,10,Normal
+Female,89,24.2,149,88,,1,6,Yes,Yes,16,,11,11,4,Mild Insomnia
+Female,47,29.4,97,80,Day,9,4,No,No,15,,12,6,1,Sleep Disorder
+Female,21,21.9,127,81,Day,3,6,No,Yes,16,,8,4,4,Mild Insomnia
+Male,60,19.5,106,79,,4,4,No,Yes,16,High,3,3,7,Normal
+Male,92,19.2,98,58,,7,10,Yes,Yes,26,Low,6,11,2,Sleep Disorder
+Female,23,20.0,90,75,Night,3,4,No,No,24,,9,7,1,Risk of Disorder
+Male,20,27.9,108,64,Day,9,6,Yes,No,25,Low,4,12,10,Normal
+Male,32,22.8,97,72,Both,3,8,Yes,Yes,28,High,10,9,2,Narcolepsy
+Male,21,30.0,122,83,Night,8,7,Yes,Yes,23,High,10,8,3,Risk of Disorder
+Male,28,25.9,93,70,Day,2,6,No,No,19,,6,6,5,Mild Insomnia
+Male,34,28.5,107,79,,9,1,No,No,17,,7,11,6,Mild Insomnia
+Male,12,17.4,117,90,Day,9,5,Yes,Yes,27,,10,9,1,Sleep Disorder
+Male,41,26.3,127,71,Day,2,7,Yes,Yes,18,Low,6,3,3,Narcolepsy
+Female,40,26.1,126,79,Day,5,6,No,No,22,High,5,12,2,Narcolepsy
+Male,29,29.6,100,63,,3,2,No,No,16,,11,1,8,Good Sleep
+Male,18,29.3,105,84,,5,9,Yes,Yes,18,High,11,3,9,Good Sleep
+Female,28,23.8,115,68,Day,7,3,No,No,26,,12,8,10,Good Sleep
+Female,18,20.7,105,71,,2,1,No,No,21,,8,8,2,Sleep Apnea
+Male,30,27.3,114,62,Both,1,5,Yes,Yes,21,,8,5,1,Risk of Disorder
+Male,31,22.5,120,83,Night,3,8,Yes,No,16,Low,11,6,3,Sleep Apnea
+Female,69,29.5,146,88,Day,10,7,Yes,No,19,Low,10,8,9,Normal
+Male,46,23.6,90,61,Day,3,8,No,Yes,28,Low,7,3,2,Sleep Apnea
+Male,30,22.0,111,79,Day,4,5,Yes,Yes,17,,12,12,2,Narcolepsy
+Female,45,23.7,99,74,Day,2,4,No,Yes,23,High,6,6,5,Mild Insomnia
+Male,18,25.4,127,65,Day,10,6,Yes,No,18,Low,4,11,7,Good Sleep
+Female,48,21.6,123,87,,9,4,No,Yes,21,Low,11,4,8,Good Sleep
+Female,31,27.7,108,86,Day,4,6,No,No,16,,8,1,10,Good Sleep
+Male,42,29.1,100,74,Day,6,9,Yes,No,27,,2,4,10,Good Sleep
+Male,30,19.3,121,55,Day,4,10,Yes,No,28,High,6,1,6,Mild Insomnia
+Female,41,26.8,124,69,Both,5,5,Yes,Yes,16,High,2,4,3,Narcolepsy
+Female,36,29.7,91,76,Both,8,4,No,No,16,High,2,6,1,Sleep Disorder
+Male,98,21.5,155,83,Day,2,6,No,No,24,Low,11,7,8,Good Sleep
+Male,28,21.6,106,55,Night,3,5,Yes,Yes,26,High,9,3,9,Good Sleep
+Female,27,27.6,122,77,Day,7,9,Yes,Yes,20,High,4,5,1,Sleep Disorder
+Male,42,25.3,106,73,Day,7,9,Yes,No,25,Low,11,10,1,Sleep Apnea
+Male,53,27.4,152,56,Day,9,1,No,No,26,,12,3,4,Mild Insomnia
+Female,30,22.5,99,84,Night,6,5,Yes,Yes,30,,6,9,3,Narcolepsy
+Male,19,26.1,98,90,Day,1,5,No,No,23,Low,9,10,7,Normal
+Female,25,27.0,126,67,Day,6,5,No,No,24,,12,4,2,Sleep Apnea
+Male,68,22.1,138,66,Day,10,2,No,No,29,,3,3,2,Risk of Disorder
+Female,48,21.1,124,82,Day,6,7,Yes,No,29,,3,12,3,Sleep Disorder
+Male,27,21.3,108,59,Both,3,5,Yes,Yes,26,,7,9,6,Mild Insomnia
+Female,27,20.7,90,66,,9,7,Yes,Yes,29,Low,11,3,2,Risk of Disorder
+Female,23,29.3,123,69,Day,6,7,Yes,Yes,17,High,3,6,1,Risk of Disorder
+Male,29,18.6,126,79,Both,1,4,No,No,16,High,6,8,7,Good Sleep
+Female,46,26.2,118,80,Day,1,8,Yes,No,24,,8,4,3,Risk of Disorder
+Male,33,29.0,106,76,Day,4,10,No,Yes,17,High,11,8,10,Normal
+Female,96,19.6,149,79,,1,6,No,No,19,Low,4,7,2,Risk of Disorder
+Male,20,20.0,120,80,Both,6,8,Yes,No,16,High,6,4,9,Good Sleep
+Male,57,27.2,116,55,Day,7,8,Yes,Yes,15,,3,5,9,Good Sleep
+Female,21,23.5,104,77,Night,3,9,Yes,Yes,29,,4,5,8,Good Sleep
+Male,62,23.4,92,77,Day,8,10,Yes,Yes,15,,9,10,8,Normal
+Male,48,18.8,104,70,Day,4,6,Yes,No,28,,5,3,1,Narcolepsy
+Male,28,29.6,119,69,Day,2,6,No,Yes,23,,9,3,2,Sleep Disorder
+Female,40,19.0,90,62,Both,4,4,Yes,No,28,High,4,12,2,Narcolepsy
+Female,26,21.5,96,73,Day,7,4,No,Yes,29,High,8,12,10,Normal
+Male,51,25.5,95,56,Night,10,7,Yes,No,23,,9,8,10,Normal
+Female,33,28.5,109,78,,2,5,Yes,Yes,29,Low,11,2,5,Mild Insomnia
+Female,8,16.5,109,82,Day,6,4,Yes,Yes,17,Low,8,7,9,Normal
+Male,20,18.9,97,56,Day,7,4,No,No,27,,2,8,9,Normal
+Male,13,15.0,92,94,Day,1,7,Yes,Yes,22,High,10,12,10,Good Sleep
+Female,33,29.5,103,86,Day,5,4,Yes,Yes,24,High,11,6,1,Risk of Disorder
+Male,44,21.6,127,79,,7,7,No,Yes,28,Low,9,4,3,Sleep Disorder
+Female,29,18.6,112,73,Night,9,6,Yes,No,20,,5,8,10,Good Sleep
+Female,4,14.9,105,85,Day,3,2,No,No,18,,12,8,10,Good Sleep
+Female,29,24.2,119,78,,10,8,Yes,Yes,26,,8,2,8,Normal
+Male,63,19.4,134,67,,4,5,Yes,Yes,19,Low,10,12,2,Narcolepsy
+Male,94,18.9,152,55,,2,5,Yes,Yes,30,High,5,10,3,Risk of Disorder
+Male,26,28.0,95,68,Day,8,6,Yes,No,25,,5,11,2,Sleep Disorder
+Female,19,21.8,93,80,Day,9,4,Yes,Yes,15,High,4,3,1,Sleep Apnea
+Male,43,23.3,123,69,Both,9,7,Yes,Yes,17,Low,12,11,8,Good Sleep
+Female,7,15.5,101,73,,3,7,Yes,No,16,Low,6,2,9,Normal
+Female,48,28.1,128,65,Night,1,7,Yes,Yes,17,,9,10,7,Normal
+Male,28,28.7,95,55,Both,3,10,Yes,No,15,Low,10,1,1,Sleep Apnea
+Female,38,28.5,116,77,Both,6,9,Yes,No,26,,12,9,3,Narcolepsy
+Female,18,25.0,116,98,,9,4,No,No,22,,12,8,3,Narcolepsy
+Female,35,27.6,108,65,Day,4,2,No,No,18,,7,2,3,Narcolepsy
+Female,97,23.8,106,88,Day,9,9,Yes,Yes,28,,8,7,2,Sleep Disorder
+Male,59,24.5,119,57,Day,9,3,No,No,21,,7,9,1,Risk of Disorder
+Male,57,22.7,90,76,Day,10,6,No,No,17,Low,11,8,2,Risk of Disorder
+Female,68,23.9,106,70,,2,4,No,No,20,High,5,9,7,Good Sleep
+Male,24,24.1,95,71,Day,3,9,Yes,No,15,Low,5,7,2,Sleep Apnea
+Male,39,20.0,117,67,Day,8,5,No,Yes,22,,3,11,2,Narcolepsy
+Female,66,24.2,96,83,,10,5,Yes,Yes,26,High,10,4,9,Normal
+Female,14,18.4,114,82,Day,10,4,No,No,27,High,2,12,7,Normal
+Male,86,22.0,99,71,Day,8,6,No,Yes,18,,9,5,6,Mild Insomnia
+Male,40,20.6,115,84,Day,1,4,Yes,Yes,26,Low,7,10,2,Sleep Apnea
+Female,32,19.4,114,80,Night,1,9,No,Yes,19,High,8,11,1,Narcolepsy
+Male,20,21.1,124,78,,2,4,No,Yes,30,High,9,6,6,Mild Insomnia
+Male,22,27.1,114,56,Day,2,6,No,Yes,28,High,11,7,7,Good Sleep
+Male,36,25.2,128,67,Day,9,10,No,Yes,16,Low,9,3,7,Normal
+Male,14,17.6,112,77,,8,3,No,No,30,,8,11,9,Good Sleep
+Male,30,25.4,120,83,,2,5,Yes,Yes,22,High,9,2,1,Sleep Apnea
+Female,18,22.6,94,68,,7,5,No,No,21,,10,9,5,Mild Insomnia
+Male,37,19.0,124,71,,5,4,No,No,21,High,12,6,1,Narcolepsy
+Female,25,29.1,102,79,Day,7,9,No,Yes,26,Low,4,7,8,Good Sleep
+Female,64,21.3,92,69,,7,7,No,Yes,23,Low,2,1,1,Sleep Apnea
+Female,90,21.7,105,85,Day,10,1,No,No,29,Low,2,4,5,Mild Insomnia
+Female,66,27.3,125,88,Day,3,4,Yes,No,22,,2,3,6,Mild Insomnia
+Male,42,21.4,124,84,Both,7,4,Yes,Yes,16,High,3,10,3,Sleep Disorder
+Male,18,24.9,127,88,,4,5,No,Yes,26,High,12,6,1,Narcolepsy
+Male,46,21.7,122,58,Night,10,7,Yes,No,19,,10,1,8,Good Sleep
+Male,28,25.4,119,83,Both,2,7,Yes,No,30,Low,8,12,2,Sleep Disorder
+Female,75,22.3,128,68,,10,8,Yes,No,26,High,2,5,3,Sleep Apnea
+Male,38,29.4,99,71,Both,7,4,No,No,27,,7,10,3,Risk of Disorder
+Male,100,24.4,110,84,Day,6,6,Yes,Yes,20,High,9,2,3,Risk of Disorder
+Female,72,23.7,131,76,,9,4,No,No,29,High,3,10,5,Mild Insomnia
+Female,61,26.0,154,76,Day,9,2,No,No,28,Low,10,6,1,Narcolepsy
+Male,40,19.5,100,58,Both,1,5,Yes,No,27,High,3,2,7,Normal
+Male,35,27.8,124,71,Night,9,4,No,Yes,18,Low,10,4,3,Sleep Apnea
+Female,68,28.8,118,72,Day,7,2,No,No,24,,2,11,1,Narcolepsy
+Male,19,25.9,116,64,Night,6,4,Yes,No,20,Low,5,3,3,Sleep Disorder
+Male,40,18.9,122,65,Both,3,4,Yes,No,21,High,4,6,4,Mild Insomnia
+Female,31,23.6,114,79,Day,10,6,No,No,26,,12,6,1,Sleep Apnea
+Female,41,22.3,108,68,Both,4,4,No,Yes,25,High,11,5,3,Risk of Disorder
+Female,28,27.4,90,67,Night,6,10,Yes,No,28,Low,9,2,2,Sleep Disorder
+Female,18,27.8,100,79,,5,9,No,Yes,25,,7,9,3,Sleep Disorder
+Female,73,23.1,98,61,,7,5,Yes,No,15,High,9,4,3,Narcolepsy
+Female,55,26.9,131,67,Night,8,5,Yes,Yes,23,,5,9,2,Risk of Disorder
+Female,67,28.9,143,81,,4,4,Yes,No,22,Low,8,8,10,Good Sleep
+Male,21,28.1,110,77,Night,2,4,Yes,No,25,Low,2,11,1,Narcolepsy
+Male,47,28.5,124,62,Day,9,4,No,No,29,High,8,1,4,Mild Insomnia
+Male,27,26.8,108,72,Both,1,7,Yes,No,29,Low,8,8,3,Sleep Disorder
+Male,57,26.9,98,69,Day,3,5,Yes,No,23,High,12,4,3,Sleep Apnea
+Male,18,28.0,125,87,Day,7,6,Yes,Yes,26,High,6,2,6,Mild Insomnia
+Male,29,25.5,97,68,Night,6,6,Yes,Yes,28,,10,11,3,Sleep Disorder
+Male,23,20.9,91,81,Day,2,1,No,No,16,,11,7,1,Sleep Apnea
+Female,23,23.6,107,61,Night,8,5,No,Yes,21,High,12,2,7,Normal
+Female,49,19.3,102,67,Night,7,9,Yes,No,23,,4,10,5,Mild Insomnia
+Male,23,28.8,100,75,Day,6,5,Yes,Yes,17,High,8,11,1,Risk of Disorder
+Female,27,23.4,122,71,Both,6,6,Yes,No,22,,5,9,2,Sleep Disorder
+Female,37,27.3,124,79,Day,8,4,No,Yes,17,Low,9,4,7,Normal
+Male,29,21.8,96,63,Night,2,9,No,Yes,29,Low,4,5,5,Mild Insomnia
+Male,59,27.1,148,73,Night,8,4,Yes,Yes,26,,6,1,8,Normal
+Male,23,25.6,124,59,Day,7,4,Yes,Yes,28,,4,4,7,Normal
+Male,30,23.5,92,70,Day,6,5,No,No,26,,12,12,5,Mild Insomnia
+Male,39,26.0,110,70,Day,3,5,No,Yes,15,Low,4,10,4,Mild Insomnia
+Male,25,20.5,104,61,Night,7,8,No,Yes,22,Low,2,1,3,Sleep Apnea
+Female,98,23.3,121,75,,9,6,No,No,24,,4,12,2,Sleep Disorder
+Female,28,24.9,106,89,Day,10,6,No,Yes,22,Low,12,2,6,Mild Insomnia
+Female,28,26.7,113,62,Day,2,1,No,No,18,High,12,2,2,Risk of Disorder
+Male,65,20.9,135,82,,8,5,Yes,Yes,30,Low,7,3,8,Normal
+Female,99,19.7,141,77,,9,4,No,No,24,,5,12,2,Sleep Disorder
+Male,18,26.0,98,64,,1,4,No,Yes,21,,6,10,2,Risk of Disorder
+Male,20,29.9,111,70,Day,7,5,No,Yes,19,,6,3,1,Sleep Disorder
+Female,18,21.2,102,84,,2,6,Yes,Yes,29,,11,1,5,Mild Insomnia
+Male,60,19.7,139,62,,4,8,Yes,Yes,25,High,4,4,4,Mild Insomnia
+Male,20,29.1,113,83,Day,10,4,No,Yes,22,Low,3,9,2,Sleep Disorder
+Female,37,27.4,110,61,Night,7,10,No,No,29,Low,11,7,8,Good Sleep
+Female,19,29.6,115,60,Day,3,10,No,Yes,30,,11,10,5,Mild Insomnia
+Female,35,26.5,119,73,Day,7,5,Yes,Yes,23,Low,7,11,1,Sleep Apnea
+Male,63,23.6,129,64,Day,4,3,No,No,21,,9,2,10,Normal
+Female,11,16.2,93,67,Day,1,8,Yes,Yes,20,Low,7,7,1,Sleep Disorder
+Female,65,21.6,155,74,Day,8,6,Yes,Yes,21,,8,3,10,Good Sleep
+Female,23,23.3,101,60,Both,7,8,Yes,No,18,,7,6,10,Normal
+Male,38,24.9,105,62,Day,3,4,No,No,19,,2,2,10,Good Sleep
+Male,91,23.1,110,68,,10,8,No,Yes,16,High,9,8,2,Sleep Apnea
+Female,38,18.5,90,83,Day,9,9,Yes,Yes,17,High,8,12,4,Mild Insomnia
+Male,42,29.6,91,81,Day,10,10,No,Yes,23,High,10,4,2,Risk of Disorder
+Male,5,16.8,91,104,Day,4,5,No,Yes,24,High,2,8,3,Risk of Disorder
+Male,53,22.7,139,59,Day,6,4,Yes,Yes,19,,4,1,2,Narcolepsy
+Female,46,29.2,101,66,Night,8,9,No,No,17,Low,5,8,8,Normal
+Male,20,27.1,112,82,Both,2,4,No,No,16,Low,9,8,1,Sleep Disorder
+Female,34,21.6,116,66,Night,2,8,No,No,25,High,11,12,1,Narcolepsy
+Male,49,21.0,92,61,,10,5,No,No,18,Low,11,3,4,Mild Insomnia
+Male,29,19.9,92,74,Day,4,4,No,No,16,High,7,11,6,Mild Insomnia
+Female,47,19.1,116,63,Night,4,7,No,Yes,21,,7,7,3,Risk of Disorder
+Male,68,26.6,127,64,,4,6,Yes,Yes,20,High,10,3,1,Narcolepsy
+Female,92,22.2,142,72,,9,3,No,No,25,,12,2,4,Mild Insomnia
+Male,32,22.9,128,56,,3,6,Yes,Yes,26,High,11,1,10,Normal
+Female,22,25.0,110,72,Both,5,10,No,Yes,23,Low,11,10,4,Mild Insomnia
+Female,21,22.8,113,77,,9,2,No,No,22,,8,11,10,Normal
+Male,48,27.7,98,66,Night,3,4,No,Yes,30,High,9,10,8,Good Sleep
+Male,50,26.4,95,76,Day,2,3,No,No,25,Low,4,6,1,Risk of Disorder
+Female,63,23.9,127,77,,1,3,No,No,15,,11,12,3,Narcolepsy
+Female,41,26.4,95,80,,8,6,Yes,Yes,20,Low,5,3,3,Narcolepsy
+Male,20,25.7,105,74,Day,7,9,Yes,No,17,Low,6,9,9,Good Sleep
+Male,82,20.9,129,63,,6,5,No,Yes,15,,3,6,3,Risk of Disorder
+Female,96,23.4,101,77,,9,3,No,No,20,,2,7,8,Normal
+Female,34,18.6,104,65,Both,5,6,Yes,Yes,23,Low,11,3,1,Narcolepsy
+Female,9,18.4,126,122,,4,2,No,No,28,,12,9,2,Sleep Apnea
+Male,27,29.6,101,56,Both,9,6,No,No,21,Low,7,2,1,Sleep Disorder
+Female,31,23.8,116,71,Day,2,6,Yes,Yes,18,Low,3,2,5,Mild Insomnia
+Female,34,28.3,128,72,Day,7,5,Yes,No,16,High,3,9,3,Risk of Disorder
+Male,36,25.0,92,77,Day,6,7,Yes,No,15,Low,4,10,3,Sleep Disorder
+Male,41,27.9,127,80,Both,8,4,No,Yes,23,Low,3,3,3,Risk of Disorder
+Male,39,18.5,126,57,Both,3,8,Yes,Yes,16,,8,2,7,Good Sleep
+Female,19,25.7,93,74,Night,10,6,Yes,Yes,23,,2,4,4,Mild Insomnia
+Female,5,15.3,95,103,Day,4,5,No,No,23,Low,8,7,10,Normal
+Female,31,28.2,105,73,Both,1,1,No,No,17,High,2,4,2,Risk of Disorder
+Female,19,21.5,102,92,Day,7,10,Yes,Yes,17,Low,6,10,3,Sleep Apnea
+Female,48,28.2,95,82,Both,5,5,No,No,26,,7,7,2,Risk of Disorder
+Male,25,22.9,108,74,Night,4,10,Yes,No,27,,5,9,2,Risk of Disorder
+Female,20,26.0,120,83,Day,7,5,No,Yes,19,High,4,4,1,Risk of Disorder
+Male,47,28.6,96,67,Day,4,6,No,Yes,20,Low,6,1,9,Good Sleep
+Female,68,21.0,126,67,,2,7,No,Yes,28,,10,5,8,Good Sleep
+Male,26,25.1,110,69,Both,7,9,Yes,No,26,Low,3,5,1,Sleep Apnea
+Female,22,24.1,116,74,Night,6,7,Yes,No,24,,6,2,3,Sleep Apnea
+Male,19,25.5,124,82,Day,1,10,Yes,Yes,15,High,7,10,5,Mild Insomnia
+Female,22,25.1,95,81,Day,2,9,No,Yes,20,Low,5,11,8,Good Sleep
+Female,18,21.9,114,74,Day,2,8,Yes,No,23,Low,5,1,8,Good Sleep
+Male,23,22.6,118,74,Day,5,4,No,No,15,,10,8,2,Sleep Disorder
+Female,54,20.3,152,66,Day,10,5,Yes,Yes,24,Low,6,3,2,Sleep Disorder
+Female,59,27.5,150,65,Day,10,6,No,No,18,,2,1,9,Good Sleep
+Male,30,27.2,119,68,Day,7,1,No,No,18,Low,11,2,2,Risk of Disorder
+Female,42,29.3,110,78,,7,4,No,No,24,,10,4,1,Risk of Disorder
+Male,58,28.7,130,72,Day,2,6,No,No,21,Low,6,2,7,Normal
+Female,5,16.3,91,99,,8,4,No,No,16,Low,9,1,2,Sleep Disorder
+Male,22,25.2,108,60,Day,10,1,No,No,24,,9,2,2,Narcolepsy
+Male,68,18.6,130,74,Day,5,6,No,Yes,15,High,8,2,3,Sleep Apnea
+Female,19,19.7,106,93,Day,7,6,Yes,Yes,30,High,2,5,3,Narcolepsy
+Male,89,18.9,146,81,Day,7,7,Yes,Yes,25,High,6,1,1,Sleep Disorder
+Male,37,27.6,100,58,Both,1,5,No,Yes,21,High,8,10,3,Narcolepsy
+Male,21,25.5,122,79,Night,7,6,No,Yes,25,,4,2,8,Good Sleep
+Female,28,19.2,125,65,Both,3,3,No,No,15,,4,12,3,Sleep Apnea
+Male,62,26.6,99,64,Day,10,6,No,No,28,,4,3,1,Narcolepsy
+Female,24,27.4,92,71,Both,1,5,No,No,22,,7,11,8,Good Sleep
+Female,45,21.1,110,76,Day,1,2,No,No,29,High,12,6,8,Normal
+Female,41,22.6,104,71,Day,3,9,No,Yes,27,High,7,9,1,Narcolepsy
+Female,31,23.4,105,70,Both,3,4,Yes,No,16,High,7,9,9,Good Sleep
+Male,26,29.8,105,72,Day,7,5,Yes,Yes,20,High,4,8,5,Mild Insomnia
+Male,21,19.8,122,73,Day,8,6,No,No,17,Low,7,2,2,Narcolepsy
+Female,19,20.9,112,69,,3,7,Yes,No,26,,8,1,3,Sleep Disorder
+Male,66,19.7,114,60,Day,10,7,Yes,Yes,25,High,11,10,8,Normal
+Female,40,27.1,115,65,Day,9,5,No,No,20,Low,2,8,10,Normal
+Male,20,21.7,105,83,Both,10,4,Yes,Yes,30,Low,3,7,4,Mild Insomnia
+Male,32,23.1,103,55,Day,3,7,Yes,No,28,High,6,10,3,Sleep Apnea
+Female,50,23.2,117,69,Day,7,4,Yes,No,29,Low,2,11,2,Sleep Apnea
+Male,45,25.7,101,77,Day,1,8,No,Yes,24,,2,6,6,Mild Insomnia
+Male,67,29.4,106,69,,4,5,Yes,Yes,24,Low,2,9,1,Sleep Apnea
+Male,42,24.1,91,65,Night,5,6,Yes,Yes,24,Low,2,2,3,Sleep Disorder
+Male,58,21.0,138,72,Day,8,5,Yes,Yes,25,,10,7,2,Sleep Disorder
+Male,27,23.4,126,70,Both,7,5,Yes,Yes,28,,2,7,3,Sleep Apnea
+Female,41,20.1,107,66,Both,6,6,No,No,28,High,11,7,3,Sleep Apnea
+Female,18,20.8,116,81,Day,3,1,No,No,22,High,6,5,2,Sleep Disorder
+Male,24,23.7,110,59,Day,7,7,No,Yes,21,,3,9,1,Sleep Apnea
+Male,50,29.7,110,60,,3,4,No,Yes,23,High,2,3,2,Sleep Disorder
+Female,22,19.3,119,64,Day,6,6,No,No,20,,10,9,8,Good Sleep
+Male,68,27.0,99,57,Day,8,10,Yes,No,25,Low,12,3,3,Risk of Disorder
+Male,19,29.2,123,68,Both,6,4,Yes,No,15,,5,12,6,Mild Insomnia
+Male,21,19.9,124,71,Both,5,10,Yes,No,29,High,11,1,1,Risk of Disorder
+Male,25,22.6,117,70,Day,10,8,Yes,Yes,26,Low,4,9,4,Mild Insomnia
+Male,20,28.2,104,57,,8,8,Yes,Yes,27,,5,7,9,Normal
+Female,13,16.1,112,84,,7,3,No,No,22,High,3,4,6,Mild Insomnia
+Male,83,22.6,121,84,Day,2,1,No,No,23,High,5,8,2,Sleep Apnea
+Female,1,15.0,105,118,Day,4,6,Yes,Yes,25,,7,7,10,Normal
+Male,10,14.6,123,86,,7,5,No,Yes,27,Low,9,11,8,Normal
+Female,27,26.3,128,60,Night,10,7,Yes,Yes,23,,9,3,2,Sleep Disorder
+Female,19,19.5,97,91,Both,2,5,Yes,No,22,,6,4,3,Risk of Disorder
+Male,54,23.4,110,57,Night,3,9,No,No,20,,7,5,6,Mild Insomnia
+Female,27,19.7,121,74,Night,9,6,Yes,Yes,16,,3,5,1,Risk of Disorder
+Male,24,28.8,125,75,Night,9,5,Yes,No,20,High,7,8,2,Sleep Apnea
+Male,40,20.6,114,75,,3,10,Yes,Yes,26,Low,3,11,3,Narcolepsy
+Female,28,30.0,90,77,Day,6,4,Yes,Yes,18,High,9,10,1,Risk of Disorder
+Female,54,22.2,106,62,Day,10,10,No,Yes,16,High,6,1,3,Sleep Apnea
+Male,60,22.5,94,69,Day,3,9,Yes,No,24,,12,8,6,Mild Insomnia
+Male,26,24.4,100,62,Day,10,4,Yes,No,15,Low,11,1,3,Risk of Disorder
+Male,26,22.8,123,59,Day,7,8,No,Yes,21,Low,4,8,3,Risk of Disorder
+Female,50,19.1,141,63,Night,3,5,Yes,Yes,17,High,11,11,2,Sleep Disorder
+Female,35,20.9,117,76,Day,5,3,No,No,30,High,12,4,8,Good Sleep
+Female,43,26.1,105,84,Day,4,6,No,Yes,16,High,5,3,4,Mild Insomnia
+Female,27,23.8,95,83,Day,10,5,No,Yes,30,Low,12,10,2,Risk of Disorder
+Male,35,19.7,110,77,Day,2,5,No,No,28,High,12,12,3,Sleep Disorder
+Female,28,25.3,97,67,Day,8,2,No,No,21,,10,8,6,Mild Insomnia
+Male,47,18.9,113,72,Night,7,5,Yes,Yes,23,,9,7,7,Good Sleep
+Female,96,24.7,131,84,Day,9,1,No,No,18,,6,6,5,Mild Insomnia
+Male,29,20.8,126,62,Both,9,6,No,No,17,High,9,8,1,Risk of Disorder
+Female,97,24.5,156,67,Day,6,6,Yes,Yes,16,Low,12,9,1,Sleep Disorder
+Male,32,18.6,110,76,Day,7,5,Yes,Yes,30,High,12,8,2,Narcolepsy
+Female,18,18.6,106,88,,2,1,No,No,15,High,12,8,3,Risk of Disorder
+Female,21,23.5,107,88,Day,9,6,Yes,No,19,High,11,3,2,Risk of Disorder
+Female,42,26.2,111,73,Both,10,4,No,No,24,,12,6,3,Sleep Disorder
+Male,39,21.2,128,64,Day,6,9,Yes,No,15,Low,2,12,2,Sleep Apnea
+Female,21,28.7,124,67,Both,1,4,Yes,No,20,,8,11,10,Good Sleep
+Female,43,21.9,115,86,Night,6,8,No,No,28,High,4,6,1,Sleep Apnea
+Female,10,17.7,92,71,,1,9,No,Yes,25,,10,8,9,Good Sleep
+Male,26,27.5,90,79,Both,8,4,Yes,Yes,17,High,6,3,5,Mild Insomnia
+Male,27,25.0,100,59,Day,1,6,Yes,Yes,22,Low,8,7,2,Narcolepsy
+Female,46,25.3,114,60,Day,7,8,Yes,Yes,23,High,3,2,8,Normal
+Male,25,23.7,108,58,Day,2,6,Yes,No,30,,8,5,1,Sleep Apnea
+Male,33,24.0,95,58,,1,2,No,No,30,High,3,4,2,Sleep Apnea
+Female,22,29.6,121,65,Both,8,9,Yes,No,22,Low,2,5,7,Normal
+Female,20,21.7,99,62,Both,1,5,Yes,No,18,Low,4,7,10,Good Sleep
+Female,23,22.2,97,75,Both,1,5,No,Yes,26,,4,3,6,Mild Insomnia
+Male,28,28.3,119,63,,3,10,Yes,Yes,25,,7,5,3,Risk of Disorder
+Male,79,18.6,153,60,,1,7,Yes,Yes,29,High,3,2,1,Sleep Apnea
+Male,26,21.4,105,60,,7,3,No,No,17,High,10,9,1,Sleep Disorder
+Female,28,25.4,110,84,Day,10,6,No,No,18,,5,7,2,Narcolepsy
+Female,39,21.6,106,71,Day,6,4,No,Yes,25,Low,5,9,2,Sleep Apnea
+Female,43,23.0,99,74,Day,7,6,No,No,23,High,9,8,8,Normal
+Female,50,18.9,117,86,Day,7,6,No,No,21,High,3,3,1,Risk of Disorder
+Male,84,19.1,92,82,,6,7,Yes,No,22,Low,9,11,5,Mild Insomnia
+Male,2,16.7,117,104,,8,10,Yes,Yes,25,Low,5,2,3,Risk of Disorder
+Female,33,28.4,100,84,Night,2,8,Yes,Yes,18,Low,3,6,2,Risk of Disorder
+Female,62,19.7,119,87,,1,4,No,Yes,19,High,11,4,3,Narcolepsy
+Male,62,25.1,125,78,,6,8,Yes,Yes,26,Low,6,6,3,Sleep Disorder
+Male,95,23.7,159,69,Day,3,4,No,No,29,,7,3,10,Normal
+Male,42,26.2,104,65,,2,9,Yes,Yes,30,,4,10,2,Sleep Disorder
+Female,4,14.7,126,70,Day,6,9,No,Yes,19,Low,10,2,8,Good Sleep
+Female,21,23.2,117,78,Night,4,10,No,No,21,,10,2,4,Mild Insomnia
+Female,32,27.0,111,78,Both,5,4,Yes,Yes,20,High,4,4,3,Risk of Disorder
+Female,48,26.0,105,61,Day,5,6,No,No,20,Low,10,6,3,Risk of Disorder
+Female,46,27.4,112,78,,5,10,Yes,No,16,High,12,7,8,Normal
+Male,46,19.3,117,62,Day,6,4,No,No,27,,10,1,1,Narcolepsy
+Female,52,25.5,113,72,Day,10,9,Yes,Yes,15,High,9,2,9,Normal
+Male,21,25.1,90,77,Night,9,8,Yes,No,23,Low,4,1,3,Risk of Disorder
+Male,29,23.7,119,65,Night,4,10,No,No,28,Low,5,6,4,Mild Insomnia
+Male,34,18.9,120,63,Night,6,9,No,No,24,Low,8,5,3,Risk of Disorder
+Female,29,25.3,109,64,,2,6,Yes,No,29,Low,4,12,3,Sleep Disorder
+Male,26,24.9,98,56,Day,4,6,No,No,27,High,3,8,2,Sleep Apnea
+Female,52,24.0,146,81,Night,6,7,No,No,24,,7,12,1,Risk of Disorder
+Male,29,27.3,107,62,Day,10,10,Yes,Yes,19,Low,11,4,2,Risk of Disorder
+Female,30,24.9,97,80,Night,2,4,No,Yes,24,Low,6,8,3,Sleep Disorder
+Female,24,25.4,91,84,Day,8,5,No,Yes,23,,10,4,6,Mild Insomnia
+Male,55,19.5,126,84,Day,3,10,Yes,Yes,28,,11,9,3,Sleep Apnea
+Female,38,25.1,121,83,,8,9,Yes,No,27,,3,1,9,Normal
+Female,24,20.4,120,78,Day,7,2,No,No,21,Low,7,10,2,Risk of Disorder
+Male,34,24.0,120,74,,5,4,No,Yes,16,Low,7,9,8,Normal
+Male,30,19.9,100,68,Both,10,10,Yes,No,18,Low,5,6,4,Mild Insomnia
+Male,43,23.7,102,77,,2,9,Yes,No,27,Low,6,7,5,Mild Insomnia
+Male,50,20.0,96,78,Day,6,9,Yes,Yes,30,Low,8,11,2,Sleep Apnea
+Male,20,28.7,111,81,,2,6,No,No,18,High,12,1,9,Good Sleep
+Male,63,27.3,152,64,Day,4,6,No,Yes,27,Low,5,8,5,Mild Insomnia
+Female,20,26.3,111,86,Day,2,1,No,No,24,Low,10,9,1,Narcolepsy
+Male,69,27.6,113,57,Day,7,4,No,No,28,,6,12,3,Risk of Disorder
+Male,53,19.6,127,58,Both,4,8,Yes,Yes,27,High,3,1,3,Risk of Disorder
+Male,24,22.9,94,67,Day,6,6,No,No,29,Low,5,6,2,Narcolepsy
+Female,32,24.9,100,72,Day,4,6,No,No,27,Low,6,9,7,Good Sleep
+Female,25,26.0,113,88,Day,2,10,No,Yes,25,Low,9,6,7,Normal
+Female,22,19.3,117,60,Night,5,10,Yes,No,20,High,3,3,7,Normal
+Female,64,26.7,149,62,Day,4,9,Yes,Yes,15,,12,3,3,Narcolepsy
+Male,21,23.6,121,72,Night,10,7,Yes,Yes,16,High,2,1,3,Narcolepsy
+Male,13,19.7,117,91,Day,7,9,No,Yes,23,High,9,10,2,Narcolepsy
+Male,29,24.4,129,71,Day,3,5,No,Yes,24,Low,6,11,2,Risk of Disorder
+Female,25,23.0,107,84,Night,7,5,No,Yes,29,High,3,3,5,Mild Insomnia
+Male,27,29.2,95,73,Day,9,5,No,No,27,High,4,5,5,Mild Insomnia
+Male,40,29.4,115,73,Night,1,10,Yes,Yes,22,,12,7,1,Narcolepsy
+Female,19,27.6,114,90,Day,10,10,Yes,Yes,19,,2,10,1,Risk of Disorder
+Male,25,20.3,91,60,Night,9,5,Yes,Yes,27,,10,1,9,Normal
+Male,19,18.9,113,61,Day,8,5,No,Yes,27,,12,1,2,Narcolepsy
+Male,54,29.3,117,79,Day,1,4,No,Yes,25,Low,4,12,2,Risk of Disorder
+Male,67,20.0,97,55,Day,7,8,No,Yes,15,Low,2,12,3,Sleep Disorder
+Male,20,23.0,98,57,Both,3,4,No,Yes,23,High,7,11,6,Mild Insomnia
+Male,34,19.1,112,79,,2,5,Yes,No,18,,4,7,1,Risk of Disorder
+Female,38,20.7,110,86,Both,8,6,No,No,18,High,7,9,1,Sleep Apnea
+Male,28,27.4,108,76,Night,4,10,No,No,20,,7,11,1,Sleep Apnea
+Male,20,24.9,127,56,Both,7,1,No,No,22,High,5,11,1,Narcolepsy
+Male,66,24.1,110,79,,9,5,No,No,21,High,9,5,1,Sleep Disorder
+Female,42,22.0,97,71,Day,4,3,No,No,30,High,11,12,3,Sleep Apnea
+Female,43,25.2,129,80,Day,1,1,No,No,30,High,2,9,2,Sleep Disorder
+Male,67,20.2,119,56,Day,1,6,No,Yes,15,,6,1,3,Sleep Apnea
+Male,60,28.5,91,75,Day,7,7,No,Yes,25,Low,10,7,9,Normal
+Male,47,23.6,99,64,Day,5,4,Yes,Yes,18,,12,11,2,Sleep Disorder
+Female,2,15.2,126,126,,9,10,Yes,Yes,25,Low,2,12,3,Sleep Apnea
+Female,100,19.1,122,82,,2,4,No,No,25,,6,8,1,Narcolepsy
+Male,89,21.4,134,77,Day,10,7,Yes,Yes,28,Low,4,9,2,Risk of Disorder
+Male,20,24.5,124,65,Night,7,4,Yes,Yes,27,,10,11,3,Sleep Apnea
+Female,21,18.7,98,61,Day,10,4,No,No,23,High,7,9,5,Mild Insomnia
+Female,91,20.7,101,89,Day,2,9,Yes,Yes,20,,3,11,1,Narcolepsy
+Male,29,18.7,113,70,Night,10,4,No,Yes,21,High,10,6,3,Sleep Disorder
+Female,25,27.8,101,74,Day,3,7,Yes,No,30,,9,9,10,Normal
+Male,31,23.9,92,67,Night,4,5,Yes,No,28,Low,7,11,3,Narcolepsy
+Male,31,23.6,95,82,,4,6,No,Yes,21,,4,3,2,Sleep Apnea
+Male,36,23.1,112,63,,3,2,No,No,19,,5,2,8,Normal
+Male,20,20.9,118,62,Night,5,6,No,No,26,,3,1,3,Risk of Disorder
+Male,45,25.2,129,74,Day,9,5,Yes,No,27,High,10,10,1,Sleep Disorder
+Male,3,16.7,115,98,Day,3,4,Yes,Yes,25,,3,9,8,Normal
+Male,35,18.7,90,71,Both,8,2,No,No,25,High,5,11,2,Narcolepsy
+Female,56,20.8,117,75,Both,2,6,No,Yes,19,Low,4,5,3,Narcolepsy
+Female,21,23.1,123,68,Day,2,4,Yes,Yes,27,,9,4,10,Normal
+Male,23,21.9,102,59,Night,7,10,Yes,Yes,26,Low,10,12,9,Normal
+Female,37,26.7,91,65,Day,9,5,Yes,No,19,,6,12,3,Narcolepsy
+Male,18,26.4,111,61,,3,10,Yes,No,27,High,10,2,3,Sleep Disorder
+Female,16,23.0,95,82,,7,6,Yes,Yes,23,,3,3,1,Sleep Apnea
+Female,40,21.7,104,60,Night,8,6,No,No,27,Low,5,7,2,Risk of Disorder
+Male,46,29.4,125,64,Night,1,8,Yes,Yes,23,Low,10,4,9,Normal
+Male,36,20.9,90,77,Day,4,9,Yes,No,28,Low,9,9,3,Sleep Apnea
+Male,20,23.1,109,68,Day,5,9,Yes,Yes,16,Low,12,2,3,Sleep Disorder
+Male,1,17.1,100,83,Day,2,6,Yes,Yes,20,High,6,4,1,Sleep Disorder
+Female,95,23.7,121,68,Day,6,1,No,No,20,,10,3,3,Sleep Apnea
+Female,42,18.6,107,60,Day,7,9,No,Yes,16,High,5,5,7,Good Sleep
+Male,21,21.0,127,76,,10,4,Yes,No,26,,2,7,2,Narcolepsy
+Female,34,19.9,99,70,Day,5,5,Yes,Yes,21,High,7,1,5,Mild Insomnia
+Female,33,29.4,101,64,Day,7,9,No,Yes,27,,5,9,3,Sleep Apnea
+Female,46,22.4,95,85,Day,10,1,No,No,26,Low,7,9,8,Good Sleep
+Female,22,21.8,105,63,Both,8,10,No,Yes,22,Low,8,5,3,Sleep Apnea
+Male,33,22.7,91,78,,5,1,No,No,26,Low,11,2,4,Mild Insomnia
+Female,34,28.6,129,69,Night,6,9,No,No,27,Low,11,3,1,Sleep Apnea
+Male,42,22.5,97,81,Day,6,5,No,No,25,High,8,12,3,Sleep Apnea
+Female,17,24.2,119,84,Day,10,8,No,Yes,15,Low,5,9,1,Sleep Disorder
+Female,18,22.3,122,76,,6,8,No,Yes,17,High,11,10,7,Good Sleep
+Female,12,15.7,108,85,,2,7,Yes,No,22,,7,5,2,Narcolepsy
+Female,22,21.2,107,62,Day,3,10,No,Yes,20,Low,10,12,3,Risk of Disorder
+Male,22,19.5,105,69,Day,5,8,No,Yes,29,,8,6,3,Sleep Apnea
+Male,20,19.2,125,66,Day,4,10,No,Yes,15,,11,2,1,Sleep Disorder
+Male,29,19.0,94,77,Night,2,6,Yes,No,20,,7,2,2,Narcolepsy
+Female,43,20.0,101,71,Day,8,8,Yes,Yes,22,Low,3,10,1,Risk of Disorder
+Female,26,29.4,101,60,Day,9,4,Yes,No,30,,11,8,3,Risk of Disorder
+Female,19,24.8,129,92,Day,5,10,No,Yes,25,High,4,9,3,Sleep Apnea
+Male,25,26.4,120,84,Day,7,6,No,No,23,,5,7,2,Narcolepsy
+Male,40,21.8,112,81,Day,8,7,Yes,No,22,,7,8,8,Good Sleep
+Male,46,29.0,125,64,Night,5,5,No,Yes,26,High,2,1,1,Sleep Disorder
+Male,40,27.5,114,74,,4,1,No,No,26,Low,8,1,1,Sleep Apnea
+Male,40,21.6,120,77,Day,2,4,No,Yes,20,Low,7,12,4,Mild Insomnia
+Male,23,21.2,102,62,Day,3,5,Yes,Yes,16,Low,4,1,2,Sleep Apnea
+Male,19,24.6,112,90,Night,6,7,Yes,Yes,16,High,5,3,3,Risk of Disorder
+Male,22,25.9,124,83,Night,6,6,Yes,Yes,17,Low,12,4,2,Sleep Apnea
+Female,80,22.2,141,65,Day,1,4,No,Yes,30,Low,11,9,10,Good Sleep
+Male,26,22.8,92,69,Both,9,8,No,Yes,27,,9,4,7,Good Sleep
+Female,48,29.6,120,79,Both,1,2,No,No,25,,4,7,1,Narcolepsy
+Female,26,20.2,111,89,Day,1,8,Yes,No,18,,10,12,4,Mild Insomnia
+Male,31,19.7,105,83,Night,6,9,No,Yes,30,Low,4,9,8,Good Sleep
+Female,27,19.1,121,89,Both,1,5,Yes,No,23,High,3,8,2,Sleep Disorder
+Male,29,22.7,114,67,Day,9,10,Yes,Yes,19,Low,8,3,1,Narcolepsy
+Female,30,19.7,127,86,Day,7,6,No,No,17,Low,2,12,1,Risk of Disorder
+Male,18,25.2,94,81,,8,2,No,No,19,Low,7,5,8,Normal
+Male,20,25.5,116,62,Both,8,3,No,No,16,,10,8,3,Narcolepsy
+Male,49,21.6,128,59,Day,7,9,Yes,Yes,19,Low,11,9,3,Risk of Disorder
+Female,74,20.6,147,87,,9,5,No,Yes,16,High,7,9,10,Normal
+Male,21,28.3,109,63,,3,5,Yes,No,27,Low,2,11,3,Sleep Apnea
+Male,55,26.8,90,70,Day,5,9,No,Yes,24,High,12,3,5,Mild Insomnia
+Female,31,20.3,122,65,Night,7,5,Yes,No,15,High,10,1,7,Good Sleep
+Male,28,23.6,109,61,Night,6,4,Yes,No,28,Low,8,6,3,Risk of Disorder
+Female,30,23.9,109,87,,9,10,Yes,No,16,High,5,11,5,Mild Insomnia
+Female,23,24.1,126,65,Both,9,9,Yes,Yes,23,Low,10,12,3,Sleep Disorder
+Female,75,21.1,151,60,,10,5,No,Yes,21,High,5,4,1,Sleep Apnea
+Male,24,27.4,94,55,Both,5,7,Yes,No,15,Low,2,11,7,Good Sleep
+Female,26,26.2,119,71,Night,8,7,No,Yes,17,,12,2,7,Good Sleep
+Male,30,26.4,118,71,Day,10,7,Yes,Yes,24,Low,8,12,5,Mild Insomnia
+Female,36,23.3,110,79,Day,2,7,No,Yes,20,,6,8,9,Good Sleep
+Male,89,20.4,103,74,Day,6,6,No,No,21,Low,4,9,2,Sleep Apnea
+Female,41,23.1,102,81,Day,8,4,Yes,No,20,High,7,9,10,Normal
+Male,24,20.9,94,62,Day,3,8,Yes,Yes,21,High,4,9,6,Mild Insomnia
+Male,45,26.2,106,73,Day,7,1,No,No,19,High,9,1,2,Narcolepsy
+Female,46,23.6,99,70,Both,1,4,No,No,30,,3,3,10,Good Sleep
+Male,85,23.0,139,74,,5,9,Yes,No,26,,6,1,10,Normal
+Female,67,26.5,107,61,,6,5,Yes,No,24,,2,2,7,Normal
+Male,70,21.7,110,58,,9,4,Yes,No,20,,7,12,1,Narcolepsy
+Male,41,25.6,111,57,Day,4,4,Yes,No,27,,6,7,3,Risk of Disorder
+Female,55,24.2,120,85,Day,1,6,Yes,Yes,20,Low,9,5,2,Risk of Disorder
+Female,31,25.4,103,65,Day,5,4,Yes,Yes,30,,2,9,3,Sleep Disorder
+Male,47,26.1,121,62,,5,1,No,No,17,Low,9,4,2,Narcolepsy
+Female,26,25.7,125,69,Day,5,7,Yes,Yes,26,Low,10,9,3,Narcolepsy
+Male,23,27.0,101,66,Both,9,7,No,Yes,21,High,12,3,6,Mild Insomnia
+Male,23,29.8,103,80,Day,9,1,No,No,19,,4,7,1,Sleep Apnea
+Female,33,21.8,116,84,Night,3,7,Yes,Yes,25,High,2,3,3,Risk of Disorder
+Female,30,23.1,92,75,Day,8,7,Yes,No,17,,6,8,3,Risk of Disorder
+Male,49,19.7,95,69,Day,5,10,Yes,No,15,,3,11,5,Mild Insomnia
+Male,48,22.5,104,70,Both,4,9,No,Yes,15,Low,7,8,2,Sleep Apnea
+Male,28,28.8,100,80,Day,2,10,Yes,No,27,Low,10,9,8,Normal
+Female,27,20.4,105,88,Day,8,1,No,No,16,,2,12,8,Good Sleep
+Male,39,26.4,93,74,Night,4,7,Yes,Yes,19,High,5,9,1,Sleep Disorder
+Female,31,19.9,97,73,Day,7,8,Yes,No,28,High,11,7,2,Sleep Apnea
+Female,83,23.3,147,64,,6,1,No,No,17,,3,7,10,Good Sleep
+Male,79,21.3,109,74,Day,8,6,No,Yes,23,Low,6,6,2,Narcolepsy
+Male,34,23.0,116,70,Day,2,5,No,No,22,,8,4,8,Good Sleep
+Female,29,27.6,125,65,Day,8,7,No,Yes,22,Low,9,8,3,Sleep Apnea
+Female,24,22.3,100,68,,5,6,No,Yes,15,High,9,2,3,Risk of Disorder
+Male,19,18.8,99,66,Day,4,2,No,No,21,High,8,6,2,Risk of Disorder
+Male,23,22.4,115,69,Night,3,5,Yes,Yes,25,,4,5,9,Normal
+Female,45,28.8,108,60,Day,9,10,Yes,No,15,Low,2,10,7,Good Sleep
+Male,20,27.4,129,75,Both,1,5,Yes,No,28,,3,3,8,Normal
+Male,44,19.7,96,61,Both,7,5,Yes,Yes,27,,4,1,1,Sleep Apnea
+Male,23,26.3,99,66,Both,7,8,No,Yes,30,High,10,4,7,Normal
+Female,65,22.3,101,65,,10,7,Yes,No,25,,2,6,2,Narcolepsy
+Female,75,22.8,150,74,,6,5,No,No,22,High,5,12,8,Good Sleep
+Male,18,25.1,119,71,Day,2,7,No,Yes,20,,12,10,10,Normal
+Female,18,28.5,115,96,,10,10,Yes,No,25,Low,4,3,3,Sleep Disorder
+Female,56,29.4,130,63,Day,10,1,No,No,21,Low,7,6,10,Normal
+Male,24,19.1,129,57,Day,2,6,No,Yes,18,,11,10,1,Narcolepsy
+Male,11,17.7,111,63,Day,3,8,No,Yes,21,,6,3,6,Mild Insomnia
+Female,37,24.5,128,74,Day,1,10,Yes,No,25,Low,11,2,3,Sleep Disorder
+Female,18,22.4,96,98,Day,1,8,Yes,Yes,15,High,3,3,1,Risk of Disorder
+Male,59,29.5,132,74,Day,3,9,No,Yes,26,Low,6,3,2,Sleep Disorder
+Female,28,24.4,120,63,Both,1,5,Yes,No,20,,4,3,2,Sleep Apnea
+Female,27,24.1,129,79,,1,3,No,No,23,Low,11,9,1,Narcolepsy
+Male,38,25.9,121,66,Both,9,7,Yes,No,30,High,6,5,3,Sleep Apnea
+Male,85,23.6,141,59,Day,8,9,Yes,No,30,Low,3,1,2,Sleep Apnea
+Male,20,29.7,119,80,Day,5,4,No,No,30,,8,12,4,Mild Insomnia
+Male,13,14.3,110,85,Day,8,6,No,No,22,,3,12,1,Risk of Disorder
+Male,10,15.3,101,75,Day,3,7,Yes,No,22,,4,9,2,Sleep Apnea
+Female,15,26.6,117,92,Day,7,2,No,No,23,High,4,2,9,Good Sleep
+Male,48,28.7,93,73,Both,9,7,No,Yes,22,,10,7,2,Risk of Disorder
+Male,39,25.4,119,59,,7,5,Yes,No,17,Low,2,10,3,Sleep Apnea
+Male,36,24.3,106,56,Night,3,4,Yes,No,16,High,5,3,3,Narcolepsy
+Male,66,23.5,90,81,,1,7,No,Yes,29,,10,6,8,Good Sleep
+Female,49,22.9,107,69,Night,3,9,No,No,22,High,8,2,9,Normal
+Male,59,29.3,101,76,Day,6,10,Yes,Yes,23,Low,12,8,3,Risk of Disorder
+Male,34,21.5,104,83,,3,4,Yes,Yes,27,,8,9,5,Mild Insomnia
+Female,28,28.2,123,83,,7,6,No,Yes,18,High,11,5,1,Narcolepsy
+Male,24,19.0,111,79,Night,9,8,No,No,30,,6,11,5,Mild Insomnia
+Female,28,29.1,103,65,Day,8,8,Yes,No,17,Low,5,12,10,Normal
+Female,50,26.0,110,76,Night,4,10,No,Yes,27,,7,11,1,Risk of Disorder
+Female,60,29.2,152,63,,9,10,Yes,No,20,High,3,3,3,Sleep Apnea
+Male,39,28.5,96,55,Both,2,8,Yes,Yes,16,High,4,10,9,Normal
+Female,21,28.8,119,72,Day,3,4,Yes,No,16,High,6,8,7,Normal
+Male,28,19.2,116,81,Both,9,5,No,Yes,18,High,9,9,1,Sleep Disorder
+Female,25,19.1,108,69,Day,3,9,Yes,No,16,High,9,3,5,Mild Insomnia
+Male,14,18.2,106,64,Day,7,4,No,No,27,Low,6,1,1,Sleep Disorder
+Female,46,27.7,106,87,,10,3,No,No,23,,5,12,6,Mild Insomnia
+Male,29,22.1,97,84,Day,7,10,No,Yes,16,High,2,4,9,Normal
+Female,12,19.8,90,77,Day,6,10,No,Yes,24,High,7,11,8,Good Sleep
+Female,30,26.8,117,60,Day,3,9,Yes,Yes,26,Low,7,9,2,Risk of Disorder
+Female,29,25.3,98,78,Day,7,5,No,Yes,17,High,7,10,9,Normal
+Female,65,26.7,143,74,,10,10,Yes,Yes,23,,8,12,1,Narcolepsy
+Male,19,21.9,120,77,,2,4,Yes,No,23,Low,2,10,2,Risk of Disorder
+Female,19,29.6,96,79,Day,3,7,No,Yes,30,Low,4,7,4,Mild Insomnia
+Male,23,27.0,122,59,Day,8,4,Yes,No,18,High,3,12,2,Sleep Disorder
+Female,49,28.0,129,82,Night,9,6,Yes,Yes,20,High,6,1,8,Good Sleep
+Male,8,19.9,90,83,,10,2,No,No,16,,11,11,10,Good Sleep
+Male,72,22.2,137,76,,7,10,Yes,No,27,High,5,10,5,Mild Insomnia
+Male,41,27.7,105,59,Both,5,5,No,No,21,Low,5,4,1,Narcolepsy
+Female,22,20.0,108,87,Day,9,2,No,No,21,Low,4,9,1,Risk of Disorder
+Male,30,23.4,129,76,,10,5,Yes,No,30,,3,4,4,Mild Insomnia

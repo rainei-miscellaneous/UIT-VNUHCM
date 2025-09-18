@@ -1,0 +1,319 @@
+\documentclass[a4paper, 15pt]{article}
+\usepackage[utf8]{vietnam}
+\usepackage[left=3cm,right=2.5cm,top=2cm,bottom=2cm]{geometry} 
+\setlength{\parindent}{0pt}
+\usepackage{graphicx} 
+\usepackage{xcolor}
+\usepackage{tikz} 
+\usetikzlibrary{calc, matrix, shadows}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\rhead{Nhóm 05 - CS112.O22}
+\usepackage{amsmath, amssymb, amsthm, mathtools}
+\usepackage[T5]{fontenc}
+\usepackage{hyperref}
+
+\begin{document}
+
+\begin{titlepage}
+\begin{tikzpicture}[remember picture,overlay,inner sep=0,outer sep=0]
+    \draw[blue!70!black, line width=2pt] 
+        ([xshift=-1.5cm,yshift=-2cm]current page.north east) coordinate (A) -- 
+        ([xshift=1.5cm,yshift=-2cm]current page.north west) coordinate (B) -- 
+        ([xshift=1.5cm,yshift=2cm]current page.south west) coordinate (C) -- 
+        ([xshift=-1.5cm,yshift=2cm]current page.south east) coordinate (D) -- cycle;
+
+    \draw ([yshift=0.3cm,xshift=-0.3cm]A) -- ([yshift=0.3cm,xshift=0.3cm]B) -- ([yshift=-0.3cm,xshift=0.3cm]B) -- 
+          ([yshift=-0.3cm,xshift=-0.3cm]C) -- ([yshift=0.3cm,xshift=-0.3cm]D) -- ([yshift=0.3cm,xshift=0.3cm]A);
+\end{tikzpicture}
+
+\begin{center}
+    \vspace{10pt}
+    \textbf{TRƯỜNG ĐẠI HỌC CÔNG NGHỆ THÔNG TIN}\\
+    \textbf{KHOA KHOA HỌC MÁY TÍNH}
+    \vspace{20pt}
+    
+    \includegraphics[scale=0.3]{uit.png}
+    
+    \vspace{20pt}
+    \fontsize{20pt}{22pt}\selectfont 
+    \textbf{BÀI TẬP MÔN} \\
+    \textbf{XỬ LÝ NGÔN NGỮ TỰ NHIÊN}
+    
+    \vspace{15pt}
+    \fontsize{22pt}{24pt}\selectfont
+    \textbf{BÀI TẬP QUÁ TRÌNH 01}
+\end{center}
+
+\vspace{30pt}
+\textbf{Giảng viên hướng dẫn: Nguyễn Đức Vũ}
+
+\vspace{20pt}
+
+\begin{tabbing}
+\hspace{8cm}\=\hspace{3cm}\=\hspace{3cm} \kill
+\textbf{Họ và tên} \> \textbf{MSSV} \> \textbf{Mã lớp} \\
+\textbf{Trần Đình Khánh Đăng} \> \textbf{22520195} \> \textbf{CS221.P12}
+\end{tabbing}
+
+\vspace{30pt}
+\begin{center}
+    \textbf{TP. Hồ Chí Minh, ngày 5 tháng 10 năm 2024}
+\end{center}
+
+\end{titlepage}
+
+\section*{Bài tập 1}
+\subsection*{Chứng minh rằng tổng xác suất của tất cả các chuỗi có thể từ tập từ vựng $\mathcal{V}$ trong hai trường hợp sau:}
+\begin{itemize}
+    \item Không có từ kết thúc $<$\textbf{/s}$>$:  Mô hình ngôn ngữ có thể sinh chuỗi dài vô hạn.
+          \begin{equation}
+              \sum_{n=1}^{\infty}\sum_{x_{1:n}}P(x_{1:n})=\infty\tag{1}
+          \end{equation}
+    \item Có từ kết thúc $<$\textbf{/s}$>$ Mô hình ngôn ngữ phải dừng lại việc sinh chuỗi bằng từ kết thúc câu </s>..
+          \begin{equation}
+              \sum_{n=1}^{\infty}\sum_{x_{1:n}}P(x_{1:n}</s>)=1\tag{2}
+          \end{equation}
+\end{itemize}
+\subsection*{Bài tập 1a}
+Ta có:
+\[
+    \begin{aligned}
+         & \sum_{n=1}^{1} \sum_{x_{1:n}} P(x_{1:n}) = 1,                              \\
+         & \sum_{n=2}^{2} \sum_{x_{1:n}} P(x_{1:n}) = 1,                              \\
+         & \Leftrightarrow \sum_{n=1}^{2} \sum_{x_{1:n}} P(x_{1:n}) = 1 + 1 = 2,      \\
+         & \text{và } \quad \sum_{n=1}^{3} \sum_{x_{1:n}} P(x_{1:n}) = 1 + 1 + 1 = 3, \\
+         & \ldots
+    \end{aligned}
+\]
+
+Giả sử:
+\[
+    \sum_{n=1}^{k} \sum_{x_{1:n}} P(x_{1:n}) = k,
+\]
+Với một số \( k \geq 1 \).
+
+Ta cần chứng minh:
+\[
+    \sum_{n=1}^{k+1} \sum_{x_{1:n}} P(x_{1:n}) = k + 1.
+\]
+
+\[
+    \begin{aligned}
+         & \sum_{n=k+1}^{k+1} \sum_{x_{1:n}} P(x_{1:n}) = 1,                                                                                                  \\
+         & \text{Ta có } \sum_{n=1}^{k+1} \sum_{x_{1:n}} P(x_{1:n}) = \sum_{n=1}^{k} \sum_{x_{1:n}} P(x_{1:n}) + \sum_{n=k+1}^{k+1} \sum_{x_{1:n}} P(x_{1:n}) \\
+         & \Rightarrow \sum_{n=1}^{k+1} \sum_{x_{1:n}} P(x_{1:n}) = k + 1 \;(\text{ĐPCM})
+    \end{aligned}
+\]
+
+Theo quy nạp, ta có:
+\[
+    \sum_{n=1}^{\infty} \sum_{x_{1:n}} P(x_{1:n}) = \infty.
+\]
+\subsection*{Bài tập 1b}
+Ta có
+\[
+    \begin{aligned}
+         & \sum_{n=1}^{\infty}\sum_{x_{1:n}}P(x_{1:n}, </s>)=1                                                                                                               \\
+         & \Leftrightarrow \sum_{n=1}^{\infty}P(</s>)\sum_{x_{1:n}}P(x_{1:n})=1                                                                                              \\
+         & \text{ hoặc } \Leftrightarrow \sum_{n=1}^{\infty}P(</s>|x_{1:n})\sum_{x_{1:n}}P(x_{1:n})=1 \;\;(\text{Trong trường hợp }P(</s>) \text{ và } P(x_{1:n}) \text{  không độc lập}) \\
+    \end{aligned}
+\]
+Xét
+\[
+    \begin{aligned}
+         & \sum_{x_{1:n}}P(x_{1:n})                                               \\
+         & = \sum_{x_{1:n}}\prod_{i}P(x_i)                                        \\
+         & =\sum_{x_{1}}\sum_{x_{2}}\ldots \sum_{x_{n}}\prod_{i}P(x_i)            \\
+         & =\sum_{x_{1}}\sum_{x_{2}}\ldots \sum_{x_{n}} P(x_1)P(x_2)\ldots P(x_n) \\
+         & = 1\;\;(3)
+    \end{aligned}
+\]
+dễ thấy,
+\[
+    \begin{aligned}
+         & \sum_{n=1}^{\infty}P(</s>) = 1\;\;(4)                                                                           \\
+         & \sum_{n=1}^{\infty}P(</s>|x_{1:n}) = 1 \;\;(\text{Trong trường hợp }P(</s>) \text{ và } P(x_{1:n}) \text{ không độc lập}) \\
+    \end{aligned}
+\]
+Từ $(3)$ và $(4)$ $\Rightarrow$ $\sum_{n=1}^{\infty}\sum_{x_{1:n}}P(x_{1:n}</s>)=1$
+\section*{Bài tập 2}
+Cho tập dữ liệu gồm nhiều văn bản thuộc các lớp $C = \{c_1, c_2, \ldots , c_k\}$ và mỗi văn bản chứa các từ từ tập từ vựng $\mathcal{V}$. Hãy sử dụng phương pháp $\textbf{MLE}$ để tính:
+\begin{itemize}
+    \item \textbf{Xác xuất tiên nghiệm của lớp $c_j$:}
+    $$\hat{P}(c_j)=\frac{\text{count}(c_j)}{N_{doc}}$$
+    Trong đó:
+        \begin{itemize}[label=$\bullet$] 
+            \item $\text{count}(c_j)$: số văn bản thuộc lớp $c_j$.
+            \item $N_{doc}$: tổng số văn bản.
+        \end{itemize}
+    \item \textbf{Xác suất có điều kiện của từ $w_i$ trong lớp $c_j$:}
+    $$\hat{P}(w_i|c_j)=\frac{\text{count}(w_i,c_j)}{\sum_{w\in \mathcal{V}}\text{count}(w,c_j)}$$
+    Trong đó:
+    \begin{itemize}[label=$\bullet$]
+        \item count$(w_i,c_j)$: số lần từ $w_i$ xuất hiện trong lớp $c_j$.
+        \item $\sum_{w\in \mathcal{V}}\text{count}(w,c_j)$: tổng số lần xuất hiện của tất cả các từ trong lớp $c_j$.
+    \end{itemize}
+\end{itemize}
+\subsection*{Bài tập 2a}
+\begin{itemize}
+    \item Đặt \( \theta_j = P(c_j) \) là xác xuất của lớp $c_j$ mà chúng ta muốn ước lượng.
+\end{itemize}
+
+\subsection*{Likelihood Function}
+
+Hàm khả năng cho số lượng tài liệu trong \( k \) lớp theo phân phối đa thức:
+
+\[
+    L(\theta_1, \theta_2, \dots, \theta_k) = \prod_{j=1}^k \theta_j^{\text{count}(c_j)}
+\]
+
+\subsection*{Hàm Log-Likelihood}
+
+Lấy logarit của hàm khả năng, ta được hàm Log-likelihood:
+
+\[
+    \log L(\theta_1, \theta_2, \dots, \theta_k) = \sum_{j=1}^k \text{count}(c_j) \log \theta_j
+\]
+
+\subsection*{Ràng buộc xác suất}
+
+Vì \( \theta_j \) đại diện cho xác suất, ta có ràng buộc:
+
+\[
+    \sum_{j=1}^k \theta_j = 1
+\]
+
+\subsection*{Sử dụng Lagrange Multipliers}
+
+Chúng ta sử dụng một hệ số Lagrange \( \lambda \) để đưa ràng buộc vào bài toán cực đại hóa. Hàm Lagrangian là:
+
+\[
+    \mathcal{L} = \sum_{j=1}^k \text{count}(c_j) \log \theta_j + \lambda \left( 1 - \sum_{j=1}^k \theta_j \right)
+\]
+
+\subsection*{Cực đại hóa Log-likelihood}
+
+Để cực đại hóa \( \mathcal{L} \), ta lấy đạo hàm riêng theo từng \( \theta_j \) và đặt bằng 0:
+
+\[
+    \frac{\partial \mathcal{L}}{\partial \theta_j} = \frac{\text{count}(c_j)}{\theta_j} - \lambda = 0
+\]
+
+Giải tìm \( \theta_j \):
+
+\[
+    \theta_j = \frac{\text{count}(c_j)}{\lambda}
+\]
+
+\subsection*{Giải cho \( \lambda \)}
+
+Sử dụng ràng buộc \( \sum_{j=1}^k \theta_j = 1 \), ta có thể giải cho \( \lambda \):
+
+\[
+    \sum_{j=1}^k \frac{\text{count}(c_j)}{\lambda} = 1
+\]
+
+\[
+    \frac{1}{\lambda} \sum_{j=1}^k \text{count}(c_j) = 1
+\]
+
+Vì \( \sum_{j=1}^k \text{count}(c_j) = N_{doc} \), ta có:
+
+\[
+    \frac{N_{doc}}{\lambda} = 1 \quad \Rightarrow \quad \lambda = N_{doc}
+\]
+
+\subsection*{Ước lượng cuối cùng cho \( \theta_j \)}
+
+Thay \( \lambda = N_{doc} \) vào biểu thức của \( \theta_j \):
+
+\[
+    \theta_j = \frac{\text{count}(c_j)}{N_{doc}}
+\]
+
+\subsection*{Kết luận}
+
+Vì vậy, Maximum Likelihood Estimate (MLE) cho xác suất của lớp \( c_j \) là:
+
+\[
+    \hat{P}(c_j) = \frac{\text{count}(c_j)}{N_{doc}}
+\]
+
+\section*{Bài tập 2b}
+
+Chúng ta muốn ước lượng xác xuất có điều kiện \( P(w_i \mid c_j) \), xác suất của từ \( w_i \) khi biết lớp \( c_j \).
+
+\subsection*{Likelihood Function}
+
+Likelihood Functionlà:
+
+\[
+    L(\theta_{w_i, c_j}) = \prod_{w \in V} \theta_{w, c_j}^{\text{count}(w, c_j)}
+\]
+
+\subsection*{Hàm Log-Likelihood}
+
+Lấy log của hàm khả năng, ta được hàm Log-likelihood:
+
+\[
+    \log L(\theta_{w_i, c_j}) = \sum_{w \in V} \text{count}(w, c_j) \log \theta_{w, c_j}
+\]
+
+\subsection*{Cực đại hóa Log-Likelihood}
+
+Để cực đại hóa hàm Log-likelihood, ta áp dụng nguyên tắc MLE dưới ràng buộc:
+
+\[
+    \sum_{w \in V} \theta_{w, c_j} = 1
+\]
+
+Sử dụng Lagrange multipliers, ta định nghĩa hàm Lagrangian:
+
+\[
+    \mathcal{L} = \sum_{w \in V} \text{count}(w, c_j) \log \theta_{w, c_j} + \lambda \left( 1 - \sum_{w \in V} \theta_{w, c_j} \right)
+\]
+
+Lấy đạo hàm riêng theo \( \theta_{w_i, c_j} \) và đặt bằng 0:
+
+\[
+    \frac{\partial \mathcal{L}}{\partial \theta_{w_i, c_j}} = \frac{\text{count}(w_i, c_j)}{\theta_{w_i, c_j}} - \lambda = 0
+\]
+
+Giải ra \( \theta_{w_i, c_j} \):
+
+\[
+    \theta_{w_i, c_j} = \frac{\text{count}(w_i, c_j)}{\lambda}
+\]
+
+\subsection*{Giải tìm \( \lambda \)}
+
+Sử dụng ràng buộc \( \sum_{w \in V} \theta_{w, c_j} = 1 \):
+
+\[
+    \sum_{w \in V} \frac{\text{count}(w, c_j)}{\lambda} = 1
+\]
+
+\[
+    \frac{1}{\lambda} \sum_{w \in V} \text{count}(w, c_j) = 1
+\]
+
+Do đó, \( \lambda = \sum_{w \in V} \text{count}(w, c_j) \).
+
+\subsection*{Ước lượng cuối cùng cho \( \theta_j \)}
+
+Thay \( \lambda = \sum_{w \in V} \text{count}(w, c_j) \) vào biểu thức của \( \theta_j \):
+
+\[
+    \theta_j = \frac{\text{count}(c_j)}{\sum_{w \in V} \text{count}(w, c_j)}
+\]
+
+\subsection*{Kết luận}
+
+Vì vậy, Maximum Likelihood Estimate (MLE) cho xác xuất có điều kiện của lớp \( c_j \) là:
+
+\[
+    \hat{P}(c_j) = \frac{\text{count}(c_j)}{\sum_{w \in V} \text{count}(w, c_j)}
+\]
+
+\end{document}

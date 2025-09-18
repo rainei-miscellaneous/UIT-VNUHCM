@@ -1,0 +1,347 @@
+/* Players.css */
+.players-container {
+  margin-top: 80px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  max-width: 800px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.players-container h2 {
+  font-size: 24px;
+  text-align: center;
+  color: blue;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.add-player {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.add-player:hover {
+  background-color: #218838;
+}
+
+.add-players-button {
+  display: flex;
+  justify-content: space-around; /* Evenly spaced buttons */
+  padding: 10px 20px;
+  gap: 20px;
+  width: 210px;
+  color: white;
+  background-color: #007bff;
+}
+.add-players-button:hover {
+  background-color: #003cc9;
+}
+.player-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.player-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: box-shadow 0.2s;
+}
+
+.player-card:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.player-details h3 {
+  margin: 0 0 5px;
+  color: #333;
+}
+
+.player-details p {
+  margin: 0;
+  color: #666;
+}
+
+.action button {
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+}
+.search-container {
+  position: relative;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.search-input-wrapper {
+  position: relative;
+}
+
+.search-input-wrapper input[type="text"] {
+  width: 100%;
+  padding-right: 40px;
+}
+
+.search-input-wrapper .clear-search {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  color: #7f8c8d;
+  cursor: pointer;
+  padding: 0;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.header-container h2 {
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.back-to-teams {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 16px;
+  width: 170px;
+}
+
+.back-to-teams:hover {
+  background-color: #0056b3;
+}
+
+.player-actions button.navigate {
+  background-color: #6c5ce7; 
+}
+
+.player-actions button.navigate:hover {
+  background-color: #5e49c3; 
+}
+
+.player-actions button.delete {
+  background-color: rgb(255, 115, 115); 
+}
+
+.player-actions button.delete:hover {
+  background-color: rgb(255, 0, 0); 
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 8px 12px;
+  margin: 0 5px;
+  border: 1px solid #ccc;
+  background-color: white;
+  cursor: pointer;
+}
+
+.pagination button.active {
+  background-color: #007bff; /* Example active color */
+  color: white;
+  border-color: #007bff;
+}
+
+.pagination button:hover:not(.active) {
+  background-color: #f0f0f0;
+}
+/* Modal styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 800px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.modal-content h3 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.modal-content input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.modal-content select {
+  width: calc(100% - 20px);
+  margin-bottom: auto;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-actions button {
+  flex: 1;
+  margin: 0 5px;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.modal-actions button:first-child {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.modal-actions button:first-child:hover {
+  background-color: #218838;
+}
+
+.modal-actions button:last-child {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.modal-actions button:last-child:hover {
+  background-color: #c82333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .players-container {
+    padding: 10px;
+    margin-top: 60px;
+  }
+
+  .modal-content {
+    width: 90%;
+  }
+
+  .add-player {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .modal-content input,
+  .modal-content select {
+    font-size: 14px;
+  }
+  .page-button {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+}
+
+button:focus,
+input:focus {
+  outline: 2px solid #007bff;
+  outline-offset: 2px;
+}
+/* Container for pagination */
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 5px;
+}
+
+/* Style for each page button */
+.page-button {
+  padding: 8px 12px;
+  font-size: 14px;
+  color: #007bff;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Active page button */
+.active-page {
+  color: #fff;
+  background-color: #007bff;
+  border: 1px solid #007bff;
+}
+
+/* Dots for page range */
+.page-button:disabled {
+  background-color: transparent;
+  border: none;
+  color: #999;
+  cursor: default;
+}
+
+/* Hover effect for buttons */
+.page-button:hover:not(.active-page) {
+  background-color: #f1f1f1;
+}
+
+

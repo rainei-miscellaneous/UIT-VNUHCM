@@ -1,0 +1,124 @@
+.types-settings-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1000px;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    padding: 15px;
+    font-family: 'Roboto', sans-serif;
+    background: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+h1 {
+    font-size: 1.8rem;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.settings-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.setting-section-small {
+    flex: 1;
+    background: #fff;
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    min-width: 350px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.setting-section h2 {
+    font-size: 1.3rem;
+    color: #555;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.settings-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+}
+
+.settings-table th,
+.settings-table td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #eee;
+    font-size: 0.9rem;
+}
+
+.settings-table th {
+    background-color: #fafafa;
+    color: #666;
+    font-weight: 600;
+}
+
+.settings-table tr:nth-child(even) {
+    background-color: #fcfcfc;
+}
+
+.settings-table input,
+.settings-table textarea {
+    width: 95%;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.85rem;
+}
+
+.settings-table button {
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    background-color: #f0f0f0;
+    color: #333;
+    transition: background-color 0.2s;
+}
+
+.settings-table button:hover {
+    background-color: #e0e0e0;
+}
+
+.save-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.save-button:hover {
+    background-color: #0056b3;
+}
+
+.save-button:disabled {
+    background-color: #b0c4de;
+    cursor: not-allowed;
+}
+
+.setting-section {
+    flex: 1;
+    background: #fff;
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    margin-top: 15px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+}

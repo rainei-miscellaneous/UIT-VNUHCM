@@ -1,0 +1,175 @@
+.matchDetails {
+  font-family: Arial, sans-serif;
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  padding: 20px;
+  max-width: 900px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.matchTitle {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.matchInfo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.infoItem {
+  padding: 10px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.matchDetailsContainer {
+  margin-top: 20px;
+}
+
+.matchDetailsTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.matchDetailsTable td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.toggleButtonsContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.smallDetailsButton {
+  padding: 8px 12px;
+  font-size: 14px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.smallDetailsButton:hover {
+  background-color: #0056b3;
+}
+
+.goalTable,
+.cardTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.goalTable th,
+.cardTable th {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.goalTable td,
+.cardTable td {
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+.redCard {
+  color: red;
+  font-weight: 600;
+}
+
+.yellowCard {
+  color: rgb(255, 196, 0);
+  font-weight: 600;
+}
+
+.editButton,
+.addButton,
+.saveButton,
+.cancelButton,
+.removeButton {
+  padding: 8px 12px;
+  font-size: 14px;
+  margin: 5px 5px 5px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.editButton {
+  background-color: #28a745;
+  color: white;
+}
+
+.addButton {
+  background-color: #007bff;
+  color: white;
+}
+
+.saveButton {
+  background-color: #28a745;
+  color: white;
+}
+
+.cancelButton {
+  background-color: #dc3545;
+  color: white;
+}
+
+.removeButton {
+  background-color: #ffc107;
+  color: black;
+}
+
+.editButton:hover,
+.addButton:hover,
+.saveButton:hover,
+.cancelButton:hover,
+.removeButton:hover {
+  opacity: 0.9;
+}
+
+.notFound {
+  text-align: center;
+  padding: 20px;
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+  border-radius: 5px;
+}
+
+.backButton {
+  padding: 10px 15px;
+  font-size: 14px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto;
+}
+
+.backButton:hover {
+  background-color: #0056b3;
+}

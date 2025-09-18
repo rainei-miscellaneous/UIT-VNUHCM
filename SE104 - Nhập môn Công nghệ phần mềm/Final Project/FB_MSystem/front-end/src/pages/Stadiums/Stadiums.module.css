@@ -1,0 +1,104 @@
+/* Styles for the Stadiums component */
+
+.stadium-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .stadiums-list {
+    margin-top: 20px;
+  }
+  
+  .stadiums-list h2 {
+    font-size: 24px;
+    color: blue;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  .search-container {
+    margin-bottom: 20px;
+  }
+  
+  .search-input-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .search-input-wrapper p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .search-input-wrapper input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .stadium-clear-search {
+    background-color: transparent;
+    border: none;
+    color: #888;
+    cursor: pointer;
+    font-size: 18px;
+    position: relative;
+    top: -63px;
+    left: 450px;
+    transition: color 0.3s ease;
+  }
+  
+  .stadium-clear-search:hover {
+    color: red;
+    background-color: inherit;
+  }
+  
+  .stadiums-list ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .stadiums-list li {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1 1 calc(33.333% - 30px);
+    max-width: calc(33.333% - 30px);
+    text-align: center;
+  }
+  
+  .stadiums-list li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .stadiums-list li a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .stadiums-list li a:hover {
+    color: #0056b3;
+  }
+  

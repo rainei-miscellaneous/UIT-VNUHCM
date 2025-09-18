@@ -1,0 +1,95 @@
+/* HomePage.module.css */
+
+.container {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+
+.content {
+  max-width: 800px;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.banner {
+  background-color: #5ea4ee;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.banner h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.banner p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  font-weight: 600;
+
+}
+
+.ctaButton {
+  display: inline-block;
+  background-color: #07bdff;
+  color: #000;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.ctaButton:hover {
+  background-color: #05a7e3;
+  color: #000;
+}
+
+.leagueInfo,
+.teams {
+  padding: 20px;
+}
+
+.leagueInfo h2,
+.teams h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #333;
+  border-bottom: 2px solid #007bff;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.leagueInfo ul,
+.teams ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.leagueInfo li,
+.teams li {
+  font-size: 16px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.teams li a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.teams li a:hover {
+  color: #0056b3;
+}

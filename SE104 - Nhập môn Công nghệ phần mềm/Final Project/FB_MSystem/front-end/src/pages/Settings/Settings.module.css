@@ -1,0 +1,141 @@
+/* Container Style */
+.setting-container {
+  padding: 20px;
+  max-width: 900px;
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Inter', sans-serif;
+}
+
+/* Heading Styles */
+.setting-container h1, h2 {
+  text-align: center;
+  color: blue;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  border-bottom: 2px solid #eeeeee;
+  padding-bottom: 6px;
+  margin-top: 30px;
+}
+
+/* Responsive Grid Layout */
+.team-settings, .match-settings, .points-settings, .ranking-priority {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+/* Form Group */
+.setting-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.setting-group label {
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #555555;
+  font-size: 0.9rem;
+}
+
+.setting-group input, 
+.setting-group select {
+  padding: 8px 10px;
+  border: 1px solid #dddddd;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 0.95rem;
+  color: #333333;
+  background-color: #f9f9f9;
+  transition: border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.setting-group input:focus, 
+.setting-group select:focus {
+  border-color: #4a90e2;
+  outline: none;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+}
+
+/* Button Style */
+.save-button {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  padding: 10px 14px;
+  background-color: #4a90e2;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 20px auto;
+  text-align: center;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease;
+}
+
+.save-button:hover {
+  background-color: #357abd;
+  transform: translateY(-1px);
+}
+
+.save-button:active {
+  transform: translateY(0);
+}
+
+.save-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Feedback Messages */
+.feedback-message {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 12px;
+}
+
+.feedback-message.success {
+  color: #28a745;
+}
+
+.feedback-message.error {
+  color: #dc3545;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .team-settings, .match-settings, .points-settings, .ranking-priority {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+  }
+
+  .save-button {
+    width: 100%;
+  }
+}

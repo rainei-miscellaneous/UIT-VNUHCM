@@ -1,0 +1,89 @@
+/* src/pages/Dashboard/Dashboard.module.css */
+.dashboard {
+  padding: 20px;
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  background-color: #f4f7fc; /* Màu nền nhẹ nhàng */
+  min-height: 100vh; /* Đảm bảo chiếm toàn bộ chiều cao màn hình */
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+  font-size: 2em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Tạo bóng đổ nhẹ */
+}
+
+.navigationGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Tạo lưới linh hoạt */
+  gap: 30px;
+}
+
+.navigationGroup {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tạo bóng đổ nổi bật */
+  transition: transform 0.3s ease-in-out; /* Hiệu ứng khi hover */
+}
+
+.navigationGroup:hover {
+  transform: translateY(-5px);
+}
+
+.navigationGroup h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #007bff; /* Màu tiêu đề nổi bật */
+  text-align: center;
+  font-size: 1.5em;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.navigationCard {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 10px;
+  background: linear-gradient(135deg, #e0f7fa, #b2ebf2); /* Gradient màu sắc tươi sáng */
+  border-radius: 10px;
+  text-decoration: none;
+  color: #333;
+  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05); /* Bóng đổ nhẹ cho từng thẻ */
+}
+
+.navigationCard:hover {
+  background: linear-gradient(135deg, #b2ebf2, #80deea); /* Gradient khi hover */
+  transform: scale(1.03);
+}
+
+.navigationCard i {
+  margin-right: 10px;
+  font-size: 1.2em;
+  color: #00bcd4; /* Màu icon */
+}
+
+.navigationCard span {
+  font-weight: bold;
+}
+
+/* Thêm hiệu ứng "lung linh" (tùy chọn) */
+@keyframes shimmer {
+  0% {
+    background-position: -500px 0;
+  }
+  100% {
+    background-position: 500px 0;
+  }
+}
+
+.navigationCard.shimmering {
+  background: linear-gradient(90deg, #eee 8%, #f5f5f5 18%, #eee 33%);
+  background-size: 1000px 100%;
+  animation: shimmer 1.5s infinite linear;
+}

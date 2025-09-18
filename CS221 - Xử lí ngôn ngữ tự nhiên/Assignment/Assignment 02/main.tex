@@ -1,0 +1,347 @@
+\documentclass[a4paper, 15pt]{article}
+\usepackage[utf8]{vietnam}
+\usepackage[left=3cm,right=2.5cm,top=2cm,bottom=2cm]{geometry} 
+\setlength{\parindent}{0pt}
+\usepackage{graphicx} 
+\usepackage{xcolor}
+\usepackage{amsmath}    % Gói toán học
+\usepackage{amsfonts}   % Phông chữ toán học
+\usepackage[utf8]{inputenc}  % Hỗ trợ tiếng Việt (mã hóa UTF-8)
+\usepackage[T1]{fontenc}      % Hỗ trợ phông chữ Tây Âu chuẩn
+\usepackage{tikz} 
+\usetikzlibrary{calc, matrix, shadows}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\rhead{Nhóm 05 - CS112.O22}
+\usepackage{amsmath, amssymb, amsthm, mathtools}
+\usepackage[T5]{fontenc}
+\usepackage{hyperref}
+
+\begin{document}
+
+\begin{titlepage}
+\begin{tikzpicture}[remember picture,overlay,inner sep=0,outer sep=0]
+    \draw[blue!70!black, line width=2pt] 
+        ([xshift=-1.5cm,yshift=-2cm]current page.north east) coordinate (A) -- 
+        ([xshift=1.5cm,yshift=-2cm]current page.north west) coordinate (B) -- 
+        ([xshift=1.5cm,yshift=2cm]current page.south west) coordinate (C) -- 
+        ([xshift=-1.5cm,yshift=2cm]current page.south east) coordinate (D) -- cycle;
+
+    \draw ([yshift=0.3cm,xshift=-0.3cm]A) -- ([yshift=0.3cm,xshift=0.3cm]B) -- ([yshift=-0.3cm,xshift=0.3cm]B) -- 
+          ([yshift=-0.3cm,xshift=-0.3cm]C) -- ([yshift=0.3cm,xshift=-0.3cm]D) -- ([yshift=0.3cm,xshift=0.3cm]A);
+\end{tikzpicture}
+
+\begin{center}
+    \vspace{10pt}
+    \textbf{TRƯỜNG ĐẠI HỌC CÔNG NGHỆ THÔNG TIN}\\
+    \textbf{KHOA KHOA HỌC MÁY TÍNH}
+    \vspace{20pt}
+    
+    \includegraphics[scale=0.3]{uit.png}
+    
+    \vspace{20pt}
+    \fontsize{20pt}{22pt}\selectfont 
+    \textbf{BÀI TẬP MÔN} \\
+    \textbf{XỬ LÝ NGÔN NGỮ TỰ NHIÊN}
+    
+    \vspace{15pt}
+    \fontsize{22pt}{24pt}\selectfont
+    \textbf{BÀI TẬP QUÁ TRÌNH 02}
+\end{center}
+
+\vspace{30pt}
+\textbf{Giảng viên hướng dẫn: Nguyễn Đức Vũ}
+
+\vspace{20pt}
+
+\begin{tabbing}
+\hspace{8cm}\=\hspace{3cm}\=\hspace{3cm} \kill
+\textbf{Họ và tên} \> \textbf{MSSV} \> \textbf{Mã lớp} \\
+\textbf{Trần Đình Khánh Đăng} \> \textbf{22520195} \> \textbf{CS221.P12}
+\end{tabbing}
+
+\vspace{30pt}
+\begin{center}
+    \textbf{TP. Hồ Chí Minh, ngày 30 tháng 11 năm 2024}
+\end{center}
+
+\end{titlepage}
+
+\section*{Câu 1:}
+
+\textbf{Biểu thức ban đầu:}
+
+\[
+\lambda P.(P @ \textit{nam}) @ \lambda P. \textit{giỏi}(P)
+\]
+
+\[
+\Rightarrow \lambda P. \textit{giỏi}(P) @ \textit{nam}
+\]
+
+\[
+\Rightarrow \textit{giỏi}(\textit{nam})
+\]
+
+\textbf{Ta có:}
+
+\begin{itemize}
+    \item $\lambda P. (P @ \textit{nam}) : \text{nam}$
+    \item $\lambda P. \textit{giỏi} (P) : \text{giỏi}$
+\end{itemize}
+
+\textbf{Phát biểu bằng ngôn ngữ tự nhiên: }
+\textit{"Nam giỏi"}
+
+\vspace{10pt}
+
+\section*{Câu 2:}
+
+\textbf{Biểu thức ban đầu:}
+
+\begin{flushleft}
+\[
+(\lambda P. \lambda Q. \exists X ((P@X) \land (Q@X))) @ \lambda P. \textit{quyển\_sách}(P)) @ \lambda P. \textit{hay}(P)
+\]
+
+\[
+\Rightarrow \lambda Q. \exists X (\lambda P. \textit{quyển\_sách}(P) @ X \land (Q@X)) @ \lambda P. \textit{hay}(P)
+\]
+
+\[
+\Rightarrow \lambda Q. \exists X (\textit{quyển\_sách}(X) \land (Q@X)) @ \lambda P. \textit{hay}(P)
+\]
+
+\[
+\Rightarrow \exists X (\textit{quyển\_sách}(X) \land (\lambda P. \textit{hay}(P) @ X))
+\]
+
+\[
+\Rightarrow \exists X (\textit{quyển\_sách}(X) \land \textit{hay}(X))
+\]
+\end{flushleft}
+
+\textbf{Ta có:}
+
+\begin{itemize}
+    \item $\lambda P. \lambda Q. \exists X ((P@X) \land (Q@X))) : \text{Có một}$
+    \item $\lambda P. \textit{quyển\_sách}(P) : \text{quyển sách}$
+    \item $\lambda P. \textit{hay}(P) : \text{hay}$
+\end{itemize}
+
+\textbf{Phát biểu bằng ngôn ngữ tự nhiên: } 
+\textit{"Có một quyển sách hay"}
+
+\vspace{10pt}
+
+% $==========================================================$
+\section*{Câu 3:}
+
+\textbf{Biểu thức ban đầu:}
+
+\[
+\lambda P. (P @ \textit{toàn}) @ 
+\left( \lambda P. \lambda X. \left( P @ \lambda Y. \textit{trồng}(X, Y) \right) @ 
+\left( \lambda P. \lambda Q. \exists X \left( (P @ X) \land (Q @ X) \right) @ \lambda P. \textit{cây\_chanh}(P) \right) \right)
+\]
+
+\[
+\Rightarrow
+\lambda P. (P @ \textit{toàn}) @ 
+\left( \lambda P. \lambda D. \left( P @ \lambda Y. \textit{trồng}(D, Y) \right) @ 
+\left( \lambda P. \lambda Q. \exists X \left( (P @ X) \land (Q @ X) \right) @ \lambda P. \textit{cây\_chanh}(P) \right) \right)
+\]
+\[
+(\text{Phép biến đổi alpha cho } \lambda X)
+\]
+
+\[
+\Rightarrow 
+\lambda P. (P @ \textit{toàn}) @ 
+\left( \lambda P. \lambda D. \left( P @ \lambda Y. \textit{trồng}(D, Y) \right) @ 
+\left( \lambda Q. \exists X \left( (\lambda P. \textit{cây\_chanh}(P) @ X) \land (Q @ X) \right) 
+\right) \right)
+\]
+
+\[
+\Rightarrow 
+\lambda P. (P @ \textit{toàn}) @ 
+\left( \lambda P. \lambda D. \left( P @ \lambda Y. \textit{trồng}(D , Y) \right) @ 
+\left( \lambda Q. \exists X \left( \textit{cây\_chanh}(X) \land (Q @ X) \right) 
+\right) \right)
+\]
+
+\[
+\Rightarrow
+\lambda P. (P @ \textit{toàn}) @
+\left( \lambda D. \left( \lambda Q. \exists X \left( \textit{cây\_chanh}(X) \land (Q @ X) \right) @ \lambda Y. \textit{trồng}(D, Y) \right) \right)
+\]
+
+\[
+\Rightarrow
+\lambda P. \left( P @ \textit{toàn} \right) @
+(\lambda D. \left( \exists X \left( \textit{cây\_chanh}(X) \land \left( \lambda Y. \textit{trồng}(D, Y) @ X \right) \right) \right))
+\]
+
+\[
+\Rightarrow
+\lambda P. \left( P @ \textit{toàn} \right) @
+(\lambda D. \left( \exists X \left( \textit{cây\_chanh}(X) \land \textit{trồng}(D, X) \right) \right))
+\]
+
+\[
+\Rightarrow
+\lambda D. \left( \exists X \left( \textit{cây\_chanh}(X) \land \textit{trồng}(D, X) \right) \right) @ \textit{toàn}
+\]
+
+\[
+\Rightarrow
+\exists X \left( \textit{cây\_chanh}(X) \land \textit{trồng}(\textit{toàn}, X) \right)
+\]
+
+
+\textbf{Ta có:}
+
+\begin{itemize}
+    \item $\lambda P. (P @ \textit{toàn}) : \text{toàn}$
+    \item $\lambda P. \lambda X. ( P @ \lambda Y. \textit{trồng}(X, Y) : \text{trồng} $
+    \item $\lambda P. \lambda Q. \exists X ( (P @ X) \land (Q @ X)) : \text{một} $
+    \item $\lambda P. \textit{cây\_chanh}(P) : \text{cây chanh}$
+\end{itemize}
+
+\textbf{Phát biểu bằng ngôn ngữ tự nhiên: }
+\textit{"Toàn trồng một cây chanh"}
+
+\vspace{10pt}
+
+\section*{Câu 4:}
+
+\textbf{Biểu thức ban đầu:}
+
+$
+(\lambda P. \lambda Q. \forall X ((P @ X) \rightarrow (Q @ X)) @ 
+\lambda P. \textit{con\_mèo}(P)) @ 
+(\lambda P. \lambda X. (P @ \lambda Y. \textit{sợ}(X, Y)) @ 
+(\lambda P. \lambda Q. \forall X ((P @ X) \rightarrow (Q @ X)) @ \lambda P. \textit{con\_chó}(P)))
+$ 
+
+$
+\Rightarrow
+(\lambda P. \lambda Q. \forall X ((P @ X) \rightarrow (Q @ X)) @ 
+\lambda P. \textit{con\_mèo}(P)) @ 
+(\lambda P. \lambda D. (P @ \lambda Y. \textit{sợ}(D, Y)) @ 
+(\lambda P. \lambda Q. \forall X ((P @ X) \rightarrow (Q @ X)) @ \lambda P. \textit{con\_chó}(P)))
+$ \\ $\text{Phép biến đổi alpha cho } \lambda X$
+
+$
+\Rightarrow
+(\lambda Q. \forall X ((\lambda P. \textit{con\_mèo}(P) @ X) \rightarrow (Q @ X))) @ 
+(\lambda P. \lambda D. (P @ \lambda Y. \textit{sợ}(D, Y))) @ 
+(\lambda Q. \forall X ((\lambda P. \textit{con\_chó}(P) @ X) \rightarrow (Q @ X)))
+$
+
+\[
+\Rightarrow
+(\lambda Q. \forall X (\textit{con\_mèo}(X) \rightarrow (Q @ X))) @ 
+(\lambda P. \lambda D. (P @ \lambda Y. \textit{sợ}(D, Y))) @ 
+(\lambda Q. \forall X (\textit{con\_chó}(X) \rightarrow (Q @ X)))
+\]
+
+\[
+\Rightarrow
+(\lambda Q. \forall X (\textit{con\_mèo}(X) \rightarrow (Q @ X))) @ 
+(\lambda D. (\lambda Q. \forall X (\textit{con\_chó}(X) \rightarrow (Q @ X)) @ \lambda Y. \textit{sợ}(D, Y)))
+\]
+
+\[
+\Rightarrow
+\left( \lambda Q. \forall X (\textit{con\_mèo}(X) \rightarrow (Q @ X)) \right)
+@ 
+\left( \lambda D. \forall X (\textit{con\_chó}(X) \rightarrow \lambda Y. \textit{sợ}(D, Y) @ X) \right)
+\]
+
+\[
+\Rightarrow
+\left( \lambda Q . \forall X \left( \textit{con\_mèo}(X) \rightarrow (Q @ X) \right) \right)
+@ 
+\left( \lambda D . \forall X \left( \textit{con\_chó}(X) \rightarrow \textit{sợ}(D, X) \right) \right)
+\]
+
+\[
+\Rightarrow
+\left( \forall X \left( \textit{con\_mèo}(X) \rightarrow \left( \lambda D. \forall X \left( \textit{con\_chó}(X) \rightarrow \textit{sợ}(D, X) \right) @ X \right) \right) \right)
+\]
+
+\[
+\Rightarrow
+\left( \forall X \left( \textit{con\_mèo}(X) \rightarrow \left( \lambda D. \forall K \left( \textit{con\_chó}(K) \rightarrow \textit{sợ}(D, K) \right) @ X \right) \right) \right)
+\]
+
+\[
+\Rightarrow
+\left( \forall X \left( \textit{con\_mèo}(X) \rightarrow \left( \forall K \left( \textit{con\_chó}(K) \rightarrow \textit{sợ}(X, K) \right) \right) \right) \right)
+\]
+
+\textbf{Ta có:}
+
+\begin{itemize}
+    \item $\lambda P. \lambda Q. \forall X ((P @ X) \rightarrow (Q @ X)) : \text{mọi}$
+    \item $\lambda P. \textit{con\_mèo}(P) : \text{con mèo} $
+    \item $\lambda P. \lambda X. (P @ \lambda Y. \textit{sợ}(X, Y)) : \text{sợ}$
+    \item $\lambda P. \lambda Q. \forall X ((P @ X) \rightarrow (Q @ X)) : \text{mọi}$
+    \item $\lambda P. \textit{con\_chó}(P) : \text{con chó}$
+\end{itemize}
+
+\textbf{Phát biểu bằng ngôn ngữ tự nhiên: }
+\textit{"Mọi con mèo sợ mọi con chó"}
+
+\vspace{10pt}
+
+\section*{Câu 5:}
+
+\textbf{Biểu thức ban đầu:}
+
+\[
+\lambda P . (P @ \textit{nam}) @ \left( \left( \lambda P . \lambda Q . \lambda X . \left( (P @ X) \land (Q @ X) \right) @ \lambda P . \textit{giỏi}(P) \right) @ \lambda P . \textit{siêng}(P) \right)
+\]
+
+\[
+\Rightarrow
+\lambda P . (P @ \textit{nam}) @ \left( \left( \lambda Q . \lambda X . \left( (\lambda P . \textit{giỏi}(P) @ X) \land (Q @ X) \right) \right) @ \lambda P . \textit{siêng}(P) \right)
+\]
+
+\[
+\Rightarrow
+\lambda P . (P @ \textit{nam}) @ \left( \lambda X . \left( \textit{giỏi}(X) \land (\lambda P . \textit{siêng}(P) @ X) \right) \right)
+\]
+
+\[
+\Rightarrow
+\lambda P . (P @ \textit{nam}) @ \left( \lambda X . \left( \textit{giỏi}(X) \land \textit{siêng}(X) \right) \right)
+\]
+
+\[
+\Rightarrow
+\left( \lambda X . \left( \textit{giỏi}(X) \land \textit{siêng}(X) \right) \right) @ \textit{nam}
+\]
+
+\[
+\Rightarrow
+\textit{giỏi(nam)} \land \textit{siêng(nam)}
+\]
+
+\textbf{Ta có:}
+
+\begin{itemize}
+    \item $\lambda P. (P @ \textit{nam}) : \text{nam}$
+    \item $\lambda P . \lambda Q . \lambda X . \left( (P @ X) \land (Q @ X) \right) : \text{và}$
+    \item $\lambda P. \textit{giỏi} (P) : \text{giỏi}$
+    \item $\lambda P. \textit{siêng} (P) : \text{siêng}$
+\end{itemize}
+
+\textbf{Phát biểu bằng ngôn ngữ tự nhiên: }
+\textit{"Nam giỏi và siêng"}
+
+\vspace{10pt}
+
+\end{document}
